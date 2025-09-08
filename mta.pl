@@ -124,7 +124,7 @@ my @actions = (
     # Sonderaktionen
     [ 'xmlvalid',    'validate xml-file against xsd-file' ],
     [ 'xmlformat',   'format xml-file for better reading' ],
-    [ 'comp_filter', 'compile (language dependand) transform filter' ], );
+    [ 'comp_filter', 'compile (language dependent) transform filter' ], );
 
 # pseudo constants
 my $EMPTY = q{};
@@ -1597,7 +1597,7 @@ sub show_help {
             . "-type     = mapwriter build type (hd oder ram, default = %s)\n"                              #
             . "-threads  = mapwriter build threads (1-n, default = %s [number of CPUs])\n"                  #
             . "-ele      = equidistance of elevation lines (fetch_ele) (10, 20; default = %d)\n"            #
-            . "-hqele    = high qualitiy elevation lines (flag)\n"                                          #
+            . "-hqele    = high quality elevation lines (flag)\n"                                           #
             . "-language = overwrite the default language of a map (de, en, fr, it, nl, pl, ru, pt)\n\n"    #
             . "Parameter:\n"                                                                                #
             . "Action    = Action to be processed\n"                                                        #
@@ -1605,7 +1605,7 @@ sub show_help {
             . "\nEUROPE - Daten laden und vorbereiten:\n"                                                   #
             . "-------------------------------------\n"                                                     #
             . "- perl $programName load_parent Freizeitkarte_EUROPE\n"                                      #
-            . "- perl $programName load_extract Freizeitkarte_1\n"                                       #
+            . "- perl $programName load_extract Freizeitkarte_1\n"                                          #
             . "- perl $programName load_extract ...\n"                                                      #
             . "- perl $programName load_extract Freizeitkarte_N\n"                                          #
             . "- perl $programName prep Freizeitkarte_1\n"                                                  #

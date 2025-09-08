@@ -45,14 +45,14 @@ Die nachfolgende Beschreibung erläutert, wie man mittels der Entwicklungsumgebu
 - PostgreSQL + PostGIS installiert und gestartet
 - C-Compiler (gcc) installiert und lauffähig
 
-### Hardeanforderungen zur Erzeugung der Freizeitkarten-Android
+### Hardwareanforderungen zur Erzeugung der Freizeitkarten-Android
 
 - SSD
 - 10 GB RAM 
 
 ### Typ der Kartenerzeugung (auto, ram, hd)
 
-Mit den vorgenannten Anforderung (type=auto oder type=hd) lassen sich kleine Karten wie z. B. ein deutsches Bundesland in vertretbarer Zeit erzeugen. Beschleunigen läßt sich die Dauer eines Builds indem alle Daten vollständig im Hauptspeicher (RAM) gehalten werden (type=ram). Dies bedingt jedoch eine RAM-Ausstattung von mindestens 64 GB (besser 128 GB).
+Mit den vorgenannten Anforderung (type=auto oder type=hd) lassen sich kleine Karten wie z. B. ein deutsches Bundesland in vertretbarer Zeit erzeugen. Beschleunigen lässt sich die Dauer eines Builds indem alle Daten vollständig im Hauptspeicher (RAM) gehalten werden (type=ram). Dies bedingt jedoch eine RAM-Ausstattung von mindestens 64 GB (besser 128 GB).
 
 Der Parameter "type" bestimmt, ob der Buildvorgang primär den Arbeitsspeicher (RAM) oder die Festplatte (HD) für temporäre Daten nutzt:
 
@@ -78,13 +78,13 @@ Der Parameter "type" bestimmt, ob der Buildvorgang primär den Arbeitsspeicher (
 - perl mta.pl build Freizeitkarte_BERLIN
 - perl mta.pl zip Freizeitkarte_BERLIN
 
-Im Ergebnis findet sich im Verzeichnis "install/Freizeitkarte_BERLIN" zwei Dateien:
+Im Ergebnis finden sich im Verzeichnis "install/Freizeitkarte_BERLIN" zwei Dateien:
 - Freizeitkarte_BERLIN.map
 - freizeitkarte_berlin.map.zip
 
 ## Build auf einer On-Demand-Serverinstanz (Linux)
 
-Die Erzeugung der Freizeitkarten-Android kann aber auch vollständig auf einer (kostenpflichtige) On-Demand-Serverinstanz durchgeführt
+Die Erzeugung der Freizeitkarten-Android kann aber auch vollständig auf einer (kostenpflichtigen) On-Demand-Serverinstanz durchgeführt
 werden. Nachfolgend wird beschrieben wie dies in der AWS-Cloud von Amazon durchgeführt werden kann. Hiermit lassen sich in recht
 kurzer Zeit und zu geringen Kosten Freizeitkarten-Android erzeugen. Das gewählte Vorgehen ist als Beispiel zu verstehen. AWS bietet
 EC2-Instanzen unterschiedlicher Ausprägung an. Dies umfaßt auch (teurere) Instanzen mit einer Vielzahl an CPUs und sehr hoher RAM-Ausstattung.
@@ -200,7 +200,7 @@ Optionen:
 -type     = mapwriter build type (hd oder ram, default = auto)
 -threads  = mapwriter build threads (1-n, default = 10 [number of CPUs])
 -ele      = equidistance of elevation lines (fetch_ele) (10, 20; default = 20)
--hqele    = high qualitiy elevation lines (flag)
+-hqele    = high quality elevation lines (flag)
 -language = overwrite the default language of a map (de, en, fr, it, nl, pl, ru, pt)
 
 Parameter:
@@ -228,5 +228,5 @@ load_extract       = load map data: create_dir, extract_osm, fetch_ele, join_ele
 prep               = prepare map data: create_bg, join_nodes, join_bg, create_routes, join_routes, transform
 xmlvalid           = validate xml-file against xsd-file
 xmlformat          = format xml-file for better reading
-comp_filter        = compile (language dependand) transform filter
+comp_filter        = compile (language dependent) transform filter
 ```

@@ -2,4 +2,12 @@ land-polygons-split-4326/
 install/
 work/
 tmp/
-tools/ogr2osm/geom.pyc
+tools/ogr2osm/__pycache__/
+transform/fzk_osmfilter_de
+transform/fzk_osmfilter_en
+transform/fzk_osmfilter_fr
+transform/fzk_osmfilter_it
+transform/fzk_osmfilter_nl
+transform/fzk_osmfilter_pl
+transform/fzk_osmfilter_pt
+transform/fzk_osmfilter_ru
