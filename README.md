@@ -67,16 +67,18 @@ Der Parameter "type" bestimmt, ob der Buildvorgang primär den Arbeitsspeicher (
 - in Entwicklungsverzeichnis wechseln
 
 ### Initiale Aktionen (einmalig erforderlich)
-
-- Skript "bootstrap.sh" ausführen
-- Skript "complang.sh" ausführen
+```
+sh bootstrap.sh
+sh complang.sh
+```
 
 ### Aktionen je Karte (hier für die Beispielkarte "BERLIN")
-
-- perl mta.pl load_data Freizeitkarte_BERLIN
-- perl mta.pl prep Freizeitkarte_BERLIN
-- perl mta.pl build Freizeitkarte_BERLIN
-- perl mta.pl zip Freizeitkarte_BERLIN
+```
+perl mta.pl load_data Freizeitkarte_BERLIN
+perl mta.pl prep Freizeitkarte_BERLIN
+perl mta.pl build Freizeitkarte_BERLIN
+perl mta.pl zip Freizeitkarte_BERLIN
+```
 
 Im Ergebnis finden sich im Verzeichnis "install/Freizeitkarte_BERLIN" zwei Dateien:
 - Freizeitkarte_BERLIN.map
