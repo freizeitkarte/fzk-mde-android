@@ -146,8 +146,13 @@ Editieren Sie die pg_hba.conf-Datei. Ändern Sie die Authentifizierungsmethode f
 
 Ersetzen Sie folgende Zeilen:
 ```
-local all postgres peer durch: local all postgres trust
-host all all 127.0.0.1/32 scram-sha-256 durch: host all all 127.0.0.1/32 trust
+local all postgres peer
+durch:
+local all postgres trust
+
+host all all 127.0.0.1/32 scram-sha-256
+durch:
+host all all 127.0.0.1/32 trust
 ```
 
 PostgreSQL neustarten:
