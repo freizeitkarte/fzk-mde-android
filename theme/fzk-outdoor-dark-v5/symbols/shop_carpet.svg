@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580" height="580" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <title>carpet</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>carpet</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path d="m58 522h377c53.112 0 87-34.332 87-87v-290c0-49.124-36.157-87-87-87-47.547 0-69.834 29-87 58h-290z" fill="#fff" fill-rule="evenodd" opacity=".8"/>
+ <path d="m435 87c-36.25 0-58 29-58 58v290c0 29 29 58 58 58s58-29 58-58v-290c0-29-21.75-58-58-58zm-348 58v29h29v36.25h-29v29h29v36.25h-29v29h29v29h-29v29h29v36.25h-29v29h29v36.25h-29v29h300.22c-24.716 0-39.217-36.588-39.217-58v-290h-261zm58 29 58 29 58-29 58 29v29l-58-29-58 29-58-29v-29zm0 77.75 58 29 58-29 58 29v29l-58-29-58 29-58-29v-29zm0 76.5 58 29 58-29 58 29v29l-58-29-58 29-58-29v-29zm0 77.75 58 29 58-29 58 29v29l-58-29-58 29-58-29v-29zm290 0c16.016 0 29 12.984 29 29s-12.984 29-29 29-29-12.984-29-29 12.984-29 29-29z" fill="#1e1ef0" fill-rule="evenodd"/>
+</svg>

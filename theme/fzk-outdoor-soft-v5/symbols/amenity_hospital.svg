@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580" height="580" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <title>hospital</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>hospital</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g fill-rule="evenodd">
+  <path d="m116 319v145h87v87h145v-87h87v-145h-87v-87h-145v87z" fill="#fff" opacity=".2"/>
+  <path d="m232 522h87v-87h87v-87h-87v-87h-87v87h-87v87h87z" fill="#da0092"/>
+  <path d="m-6.5469 207.93c20.749 35.944 41.5 71.887 62.25 107.83 73.266-42.09 146.53-84.181 219.8-126.27 73.266 42.09 146.53 84.181 219.8 126.27 20.75-35.943 41.501-71.886 62.25-107.83-94.016-54.022-188.03-108.05-282.05-162.07 0 0-188.36 108.24-282.05 162.07z" fill="#fff" opacity=".2"/>
+  <path d="m29 217.5 36.25 62.787 210.25-120.79 210.25 120.79 36.25-62.787-246.5-141.66z" fill="#4c4c4c"/>
+ </g>
+</svg>

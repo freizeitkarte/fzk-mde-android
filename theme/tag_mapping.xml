@@ -1,0 +1,1539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tag-mapping xmlns="http://mapsforge.org/tag-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://mapsforge.org/tag-mapping ../resources/tag-mapping.xsd" default-zoom-appear="16" profile-name="default-profile">
+  <!-- -->
+  <!-- ============================================================ -->
+  <!-- Zweck   : Rendering-Regeln fuer Mapsforge-Karten mit dem Theme "freizeitkarte" -->
+  <!-- Version : 1.0.0 - 02.02.2014 -->
+  <!-- Version : 1.1.0 - 24.05.2014 Objekte zum Thema Bergbau ergaenzt -->
+  <!-- Version : 1.2.0 - 02.07.2014 barrier=hedge_bank und building=ruine ergaenzt -->
+  <!-- Version : 1.3.0 - 27.08.2014 man_made=water_works und man_made=wastewater_plant ergaenzt -->
+  <!--                              gesonderte Behandlung von building=gebaeude_garage -->
+  <!-- Version : 1.4.0 - 07.10.2014 freizeitkarte=meer, freizeitkarte=land hinzugefuegt -->
+  <!-- Version : 1.5.0 - 01.01.2015 Darstellung von mountain_pass, col, saddle ab Zoomlevel 12; winter_room hinzugefuegt -->
+  <!--                              railway=rail_service_tunnel, railway=rail_service_bridge, railway=rail_service hinzugefuegt -->
+  <!--                              Differenzierung der Bergwege in die Kategorien 1 bis 6 -->
+  <!--                              Differenzierung von Feuchtgebieten (natural = schilf, feuchtwiese, sumpfgebiet, moorgebiet, watt, saline) -->
+  <!--                              landuse=salt_pond (Saline) ergaenzt -->
+  <!-- Version : 1.5.1 - 06.02.2015 Darstellung von landuse=reservoir hinzugefuegt -->
+  <!-- Version : 1.6.0 - 21.03.2015 Darstellung von natural=shingle hinzugefuegt -->
+  <!--                              Darstellung von amenity=bicycle_parking hinzugefuegt (closed-way, node) -->
+  <!--                              Darstellung von amenity=parkflaeche_privat, parkflaeche_eingeschraenkt, parking_space (closed-way) -->
+  <!--                              Unterstuetzung fuer railway=abandoned auskommentiert -->
+  <!-- Version : 1.7.0 - 24.04.2015 Unterstuetzung der Tags leaf_type=broadleaved / needleleaved / mixed -->
+  <!-- Version : 1.8.0 - 24.01.2016 Nutzungsbeschraenkungen fuer Strassen und Wege ueberarbeitet -->
+  <!-- Version : 1.8.1 - 30.01.2016 Flaechengroessen fuer landuse=commercial und leisure=park beruecksichtigt -->
+  <!-- Version : 1.8.2 - 05.02.2016 Beruecksichtigung von schutzgebiet=strict_nature_reserve, highway=rest_area, leisure=ice_rink, man_made=bridge -->
+  <!-- Version : 1.8.3 - 20.02.2016 Beruecksichtigung von railway=station_subway, railway=station_light_rail, railway=halt_light_rail -->
+  <!-- Version : 1.8.4 - 24.02.2016 Beruecksichtigung von building=bahnhof, building=dach -->
+  <!-- Version : 1.9.0 - 31.03.2016 high=service_small/_tunnel/_bridge, natural=shoal*, natural=reef ergaenzt, Sonderbehandlung für island -->
+  <!--                              highway=*_link, highway=*_link_bridge, highway=*_link_tunnel, highway=emergency_access_point ergaenzt -->
+  <!--                              Behandlung von military=danger_area && range geaendert; admin_level=3 ergaenzt -->
+  <!-- Version : 1.9.1 - 01.05.2016 surface=surface_gravel/surface_sand ergaenzt; natural=waterfall entfernt -->
+  <!-- Version : 1.9.2 - 06.06.2016 amenity=social_facility, amenity=charging_station ergaenzt -->
+  <!-- Version : 1.10.0 - 02.07.2016 Darstellung von railway=construction, amenity=charging_station_car, man_made=cutline -->
+  <!-- Version : 1.11.0 - 27.11.2016 Darstellung von shop=bag, shop=watches,tourism=information_guidepost hinzugefuegt; ZL für alle Flächen angepaßt -->
+  <!--                               Berücksichtigung von shop=medical_supply, rail=narrow_gauge, rail=narrow_gauge_bridge, rail=narrow_gauge_tunnel -->
+  <!-- Version : 1.12.0 - 27.12.2016 Darstellung von mtb_scale und mtb_scale_uphill -->
+  <!-- Version : 1.13.0 - 10.03.2017 Darstellung von inline skate routen -->
+  <!-- Version : 17.09  - 31.08.2017 Berücksichtigung von Hydranten und Saugstellen, Berücksichtigung von trail_visibility -->
+  <!-- Version : 17.12  - 18.11.2017 Berücksichtigung von amenity=marketplace, waterway=fish_pass, man_made=embankment -->
+  <!--                               Berücksichtigung von highway=turning_loop, highway=escape, highway=bus_guideway -->
+  <!--                               Berücksichtigung von landuse=allotments_plot, tourism=theme_park (way) -->
+  <!--                               shop=organic entfernt, area_size=small/large ergänzt, Sportarten ergänzt -->
+  <!--                               Berücksichtigung von railway=light_rail_service_bridge, light_rail_service_tunnel, light_rail_service -->
+  <!--                               Berücksichtigung von railway=subway_service_bridge, subway_service_tunnel, subway_service -->
+  <!--                               Berücksichtigung von golf=tee/hole/pin/driving_range, leisure=fitness_station -->
+  <!-- Version : 18.03  - 26.02.2018 Berücksichtigung von landuse=depot -->
+  <!--                               Defekt bei basin=detention+retention korrigiert -->
+  <!--                               Berücksichtigung von cycleway_lane=cycleway_lane_both|cycleway_lane_left|cycleway_lane_right -->
+  <!-- Version : 19.12  - 11.11.2019 Berücksichtigung von node_network, Trennung MTB routen -->
+  <!--                               Berücksichtigung von charging_station für bicycle -->
+  <!--                               Berücksichtigung von amenity=doctors, veterinary -->
+  <!--                               Option label-position="true" für landuse=quarry und natural=water gesetzt. -->
+  <!--                               Zoomlevel für Knotennetzpunkte von Level 13 auf 12 gesenkt. -->
+  <!--                               Berücksichtigung von railway=miniature_bridge, miniature_tunnel, miniature -->
+  <!-- Version : 20.06  - 21.03.2020 Berücksichtigung von leisure=sauna -->
+  <!-- Version : 20.09  - 13.08.2020 Berücksichtigung von Kanuanlegestellen -->
+  <!--                               Berücksichtigung von barrier=border_control/cattle_grid/chain/full-height_turnstile/kissing_gate/stile/turnstile -->
+  <!--                               Berücksichtigung von amenity=water_point, waterway=water_point -->
+  <!--                               Berücksichtigung von leisure=beach_resort/bird_hide/firepit/fishing/slipway/picnic_table -->
+  <!--                               Berücksichtigung von attraction=water_slide -->
+  <!--                               Berücksichtigung von natural=hot_spring -->
+  <!--                               Berücksichtigung von attraction=summer_toboggan -->
+  <!--                               Berücksichtigung von leisure=outdoor_seating -->
+  <!-- Version : 20.12  - 20.09.2020 Berücksichtigung von fzk_turning=residential|living_street|unclassified|service|track|not_set -->
+  <!--                               Berücksichtigung von Reit-, Kanu-, Motorboot-Routen inkl. node_network -->  
+  <!-- Version : 22.12  - 29.09.2022 Berücksichtigung von Schlittel-, Langlauf-, Ski-Pisten -->
+  <!--                    20.10.2022 Berücksichtigung von historic=stone -->
+  <!-- Version : 24.06  - 01.06.2024 Zoomlevel für elevation_minor auf 12 gesetzt  -->
+  <!-- Version : 24.09  - 18.06.2024 ways: surface_grass + surface_asphalt ergänzt  -->
+  <!--                    07.07.2024 Flächengrössen fuer natural=bare_rock berücksichtigt -->
+  <!--                    10.09.2024 waterway=tidal_channel berücksichtigt -->
+  <!--                    17.09.2024 berücksichtigt: water=basin (identisch mit landuse=basin), intermittent=yes (Wasser-Feature) -->
+  <!-- -->
+  <!-- Copyright (C) 2013-2024 FZK-Projekt <freizeitkarte@googlemail.com> -->
+  <!-- -->
+  <!-- XML-Editor: Komodo Edit (Windows, Mac, Linux) -->
+  <!-- XML-Formatter: perl mt.pl xmlformat tag_mapping.xml -->
+  <!-- XML-Validator: perl mt.pl xmlvalid ftag_mapping.xml tag_mapping.xsd -->
+  <!-- -->
+  <!-- Anmerkungen: -->
+  <!-- + hier zunaechst nur die Regeln fuer Flaechen -->
+  <!-- + die Eintraege sind alphabetisch sortiert (key-Gruppen + value) -->
+  <!-- + Zoomlevel 6: Deutschland wird (mit reichlich) Luft vollstaendig angezeigt -->
+  <!-- + Zoomlevel 7: Deutschland wird zu 4/5 angezeigt -->
+  <!-- -->
+  <!-- Hinweis auf weitere Unterlagen: -->
+  <!-- + siehe auch freizeitkarte.xml -->
+  <!-- + siehe auch fzk_globals.c, fzk_nodes.c, fzk_ways.c -->
+  <!-- -->
+  <!-- ============================================================ -->
+  <!-- -->
+  <!-- -->
+  <!-- PLACE -->
+  <!-- -->
+  <pois>
+    <osm-tag key="place" value="allotments" zoom-appear="14"/>
+    <osm-tag key="place" value="city_1_000_000" zoom-appear="6"/>
+    <osm-tag key="place" value="city_100_000" zoom-appear="6"/>
+    <osm-tag key="place" value="city_250_000" zoom-appear="6"/>
+    <osm-tag key="place" value="city_500_000" zoom-appear="6"/>
+    <osm-tag key="place" value="city" zoom-appear="7"/>
+    <osm-tag key="place" value="hamlet" zoom-appear="14"/>
+    <osm-tag key="place" value="island_huge" zoom-appear="6"/>
+    <osm-tag key="place" value="island_large" zoom-appear="8"/>
+    <osm-tag key="place" value="island_medium" zoom-appear="9"/>
+    <osm-tag key="place" value="island_micro" zoom-appear="12"/>
+    <osm-tag key="place" value="island_nano" zoom-appear="13"/>
+    <osm-tag key="place" value="island_small" zoom-appear="10"/>
+    <osm-tag key="place" value="island_tiny" zoom-appear="11"/>
+    <osm-tag key="place" value="island" zoom-appear="12"/>
+    <osm-tag key="place" value="islet" zoom-appear="16"/>
+    <osm-tag key="place" value="isolated_dwelling" zoom-appear="16"/>
+    <osm-tag key="place" value="locality" zoom-appear="16"/>
+    <osm-tag key="place" value="suburb" zoom-appear="10"/>
+    <osm-tag key="place" value="town" zoom-appear="8"/>
+    <osm-tag key="place" value="village" zoom-appear="10"/>
+  </pois>
+  <!-- -->
+  <!-- POWER -->
+  <!-- -->
+  <pois>
+    <osm-tag key="power" value="pole" zoom-appear="13"/>
+    <osm-tag key="power" value="tower" zoom-appear="13"/>
+    <osm-tag key="power" value="windenergieanlage" zoom-appear="14"/>
+  </pois>
+  <!-- -->
+  <!-- AEROWAY -->
+  <!-- -->
+  <pois>
+    <osm-tag key="aeroway" value="aerodrome" zoom-appear="12"/>
+    <osm-tag key="aeroway" value="airport" zoom-appear="12"/>
+    <osm-tag key="aeroway" value="helipad" zoom-appear="14"/>
+    <osm-tag key="aeroway" value="terminal" zoom-appear="14"/>
+  </pois>
+  <!-- -->
+  <!-- RAILWAY -->
+  <!-- -->
+  <pois>
+    <osm-tag key="public_transport" value="bahnhaltepunkt" zoom-appear="14"/>
+    <osm-tag key="public_transport" value="tramhaltestelle" zoom-appear="14"/>
+    <osm-tag key="railway" value="halt_light_rail" zoom-appear="12"/>
+    <osm-tag key="railway" value="halt" zoom-appear="12"/>
+    <osm-tag key="railway" value="level_crossing" zoom-appear="14"/>
+    <osm-tag key="railway" value="station_light_rail" zoom-appear="12"/>
+    <osm-tag key="railway" value="station_subway" zoom-appear="12"/>
+    <osm-tag key="railway" value="station" zoom-appear="12"/>
+    <osm-tag key="railway" value="subway_entrance" zoom-appear="14"/>
+    <osm-tag key="railway" value="tram_stop" zoom-appear="14"/>
+  </pois>
+  <!-- -->
+  <!-- BARRIER -->
+  <!-- -->
+  <pois>
+    <osm-tag key="barrier" value="block" zoom-appear="14"/>
+    <osm-tag key="barrier" value="bollard" zoom-appear="14"/>
+    <osm-tag key="barrier" value="border_control" zoom-appear="14"/>
+    <osm-tag key="barrier" value="cattle_grid" zoom-appear="14"/>
+    <osm-tag key="barrier" value="chain" zoom-appear="14"/>
+    <osm-tag key="barrier" value="cycle_barrier" zoom-appear="14"/>
+    <osm-tag key="barrier" value="full-height_turnstile" zoom-appear="14"/>
+    <osm-tag key="barrier" value="gate" zoom-appear="14"/>
+    <osm-tag key="barrier" value="kissing_gate" zoom-appear="14"/>
+    <osm-tag key="barrier" value="lift_gate" zoom-appear="14"/>
+    <osm-tag key="barrier" value="stile" zoom-appear="14"/>
+    <osm-tag key="barrier" value="turnstile" zoom-appear="14"/>
+  </pois>
+  <!-- -->
+  <!-- AERIALWAY -->
+  <!-- -->
+  <pois>
+    <osm-tag key="aerialway" value="pylon" zoom-appear="14"/>
+    <osm-tag key="aerialway" value="station" zoom-appear="14"/>
+  </pois>
+  <!-- -->
+  <!-- TOURISM -->
+  <!-- -->
+  <pois>
+    <osm-tag key="tourism" value="alpine_hut" zoom-appear="12"/>
+    <osm-tag key="tourism" value="aquarium" zoom-appear="14"/>
+    <osm-tag key="tourism" value="artwork" zoom-appear="14"/>
+    <osm-tag key="tourism" value="attraction" zoom-appear="14"/>
+    <osm-tag key="tourism" value="basic_hut" zoom-appear="12"/>
+    <osm-tag key="tourism" value="bed_and_breakfast" zoom-appear="14"/>
+    <osm-tag key="tourism" value="berghuette_bewirtschaftet" zoom-appear="12"/>
+    <osm-tag key="tourism" value="camp_site" zoom-appear="14"/>
+    <osm-tag key="tourism" value="caravan_site" zoom-appear="14"/>
+    <osm-tag key="tourism" value="chalet" zoom-appear="14"/>
+    <osm-tag key="tourism" value="guest_house" zoom-appear="14"/>
+    <osm-tag key="tourism" value="hostel" zoom-appear="14"/>
+    <osm-tag key="tourism" value="hotel_restaurant" zoom-appear="14"/>
+    <osm-tag key="tourism" value="hotel" zoom-appear="14"/>
+    <osm-tag key="tourism" value="information" zoom-appear="14"/>
+    <osm-tag key="tourism" value="information_guidepost" zoom-appear="14"/>
+    <osm-tag key="tourism" value="lean_to" zoom-appear="12"/>
+    <osm-tag key="tourism" value="motel" zoom-appear="14"/>
+    <osm-tag key="tourism" value="museum" zoom-appear="14"/>
+    <osm-tag key="tourism" value="picnic_site" zoom-appear="14"/>
+    <osm-tag key="tourism" value="theme_park" zoom-appear="14"/>
+    <osm-tag key="tourism" value="viewpoint" zoom-appear="14"/>
+    <osm-tag key="tourism" value="wilderness_hut" zoom-appear="12"/>
+    <osm-tag key="tourism" value="zoo" zoom-appear="14"/>
+  </pois>
+  <!-- -->
+  <!-- MAN_MADE -->
+  <!-- -->
+  <pois>
+    <osm-tag key="man_made" value="adit" zoom-appear="14"/>
+    <osm-tag key="man_made" value="beacon" zoom-appear="14"/>
+    <osm-tag key="man_made" value="beobachtungsturm" zoom-appear="14"/>
+    <osm-tag key="man_made" value="funkturm" zoom-appear="14"/>
+    <osm-tag key="man_made" value="lighthouse" zoom-appear="14"/>
+    <osm-tag key="man_made" value="mast" zoom-appear="14"/>
+    <osm-tag key="man_made" value="mineshaft_disused" zoom-appear="14"/>
+    <osm-tag key="man_made" value="mineshaft" zoom-appear="14"/>
+    <osm-tag key="man_made" value="petroleum_well" zoom-appear="14"/>
+    <osm-tag key="man_made" value="reservoir_covered" zoom-appear="14"/>
+    <osm-tag key="man_made" value="tower" zoom-appear="14"/>
+    <osm-tag key="man_made" value="trigonometrischer_punkt" zoom-appear="14"/>
+    <osm-tag key="man_made" value="wastewater_plant" zoom-appear="14"/>
+    <osm-tag key="man_made" value="water_tower" zoom-appear="14"/>
+    <osm-tag key="man_made" value="water_well" zoom-appear="14"/>
+    <osm-tag key="man_made" value="water_works" zoom-appear="14"/>
+    <osm-tag key="man_made" value="watermill" zoom-appear="14"/>
+    <osm-tag key="man_made" value="windmill" zoom-appear="14"/>
+    <osm-tag key="man_made" value="works" zoom-appear="14"/>
+  </pois>
+  <!-- -->
+  <!-- NATURAL -->
+  <!-- -->
+  <pois>
+    <osm-tag key="mountain_pass" value="yes" zoom-appear="12"/>
+    <osm-tag key="natural" value="cave_entrance" zoom-appear="14"/>
+    <osm-tag key="natural" value="cliff" zoom-appear="14"/>
+    <osm-tag key="natural" value="col" zoom-appear="12"/>
+    <osm-tag key="natural" value="hot_spring" zoom-appear="14"/>
+    <osm-tag key="natural" value="landmarke_baum" zoom-appear="14"/>
+    <osm-tag key="natural" value="peak" zoom-appear="12"/>
+    <osm-tag key="natural" value="saddle" zoom-appear="12"/>
+    <osm-tag key="natural" value="spring" zoom-appear="14"/>
+    <osm-tag key="natural" value="stone" zoom-appear="14"/>
+    <osm-tag key="natural" value="tree" zoom-appear="14"/>
+    <osm-tag key="natural" value="volcano" zoom-appear="12"/>
+  </pois>
+  <!-- -->
+  <!-- HISTORIC -->
+  <!-- -->
+  <pois>
+    <osm-tag key="historic" value="archaeological_site" zoom-appear="14"/>
+    <osm-tag key="historic" value="battlefield" zoom-appear="14"/>
+    <osm-tag key="historic" value="boundary_stone" zoom-appear="14"/>
+    <osm-tag key="historic" value="castle" zoom-appear="14"/>
+    <osm-tag key="historic" value="fort" zoom-appear="14"/>
+    <osm-tag key="historic" value="memorial" zoom-appear="14"/>
+    <osm-tag key="historic" value="monument" zoom-appear="14"/>
+    <osm-tag key="historic" value="ruins" zoom-appear="14"/>
+    <osm-tag key="historic" value="rune_stone" zoom-appear="14"/>
+    <osm-tag key="historic" value="stone" zoom-appear="14"/>
+    <osm-tag key="historic" value="wayside_cross" zoom-appear="14"/>
+    <osm-tag key="historic" value="wayside_shrine" zoom-appear="14"/>
+    <osm-tag key="historic" value="wreck" zoom-appear="14"/>
+  </pois>
+  <!-- -->
+  <!-- AMENITY -->
+  <!-- -->
+  <pois>
+    <osm-tag key="amenity" value="anbetungsort_christlich" zoom-appear="14"/>
+    <osm-tag key="amenity" value="anbetungsort_juedisch" zoom-appear="14"/>
+    <osm-tag key="amenity" value="anbetungsort_muslimisch" zoom-appear="14"/>
+    <osm-tag key="amenity" value="anbetungsort_religion" zoom-appear="14"/>
+    <osm-tag key="amenity" value="arts_centre" zoom-appear="14"/>
+    <osm-tag key="amenity" value="atm" zoom-appear="14"/>
+    <osm-tag key="amenity" value="bank_geldautomat" zoom-appear="14"/>
+    <osm-tag key="amenity" value="bank" zoom-appear="14"/>
+    <osm-tag key="amenity" value="bar" zoom-appear="14"/>
+    <osm-tag key="amenity" value="bbq" zoom-appear="14"/>
+    <osm-tag key="amenity" value="bench" zoom-appear="14"/>
+    <osm-tag key="amenity" value="bicycle_parking" zoom-appear="14"/>
+    <osm-tag key="amenity" value="bicycle_rental" zoom-appear="14"/>
+    <osm-tag key="amenity" value="biergarten" zoom-appear="14"/>
+    <osm-tag key="amenity" value="bus_station" zoom-appear="14"/>
+    <osm-tag key="amenity" value="cafe" zoom-appear="14"/>
+    <osm-tag key="amenity" value="car_club" zoom-appear="14"/>
+    <osm-tag key="amenity" value="car_rental" zoom-appear="14"/>
+    <osm-tag key="amenity" value="car_sharing" zoom-appear="14"/>
+    <osm-tag key="amenity" value="car_wash" zoom-appear="14"/>
+    <osm-tag key="amenity" value="casino" zoom-appear="14"/>
+    <osm-tag key="amenity" value="charging_station" zoom-appear="14"/>
+    <osm-tag key="amenity" value="cinema" zoom-appear="14"/>
+    <osm-tag key="amenity" value="clinic" zoom-appear="14"/>
+    <osm-tag key="amenity" value="college" zoom-appear="14"/>
+    <osm-tag key="amenity" value="community_centre" zoom-appear="14"/>
+    <osm-tag key="amenity" value="community_hall" zoom-appear="14"/>
+    <osm-tag key="amenity" value="concert_hall" zoom-appear="14"/>
+    <osm-tag key="amenity" value="conference_centre" zoom-appear="14"/>
+    <osm-tag key="amenity" value="courthouse" zoom-appear="14"/>
+    <osm-tag key="amenity" value="doctors" zoom-appear="14"/>
+    <osm-tag key="amenity" value="drinking_water" zoom-appear="14"/>
+    <osm-tag key="amenity" value="embassy" zoom-appear="14"/>
+    <osm-tag key="amenity" value="fast_food_cuisine" zoom-appear="14"/>
+    <osm-tag key="amenity" value="fast_food" zoom-appear="14"/>
+    <osm-tag key="amenity" value="ferry_terminal" zoom-appear="14"/>
+    <osm-tag key="amenity" value="fire_station" zoom-appear="14"/>
+    <osm-tag key="amenity" value="fountain" zoom-appear="14"/>
+    <osm-tag key="amenity" value="fuel" zoom-appear="14"/>
+    <osm-tag key="amenity" value="hospital" zoom-appear="14"/>
+    <osm-tag key="amenity" value="hunting_stand" zoom-appear="14"/>
+    <osm-tag key="amenity" value="ice_cream" zoom-appear="14"/>
+    <osm-tag key="amenity" value="kindergarten" zoom-appear="14"/>
+    <osm-tag key="amenity" value="library" zoom-appear="14"/>
+    <osm-tag key="amenity" value="nightclub" zoom-appear="14"/>
+    <osm-tag key="amenity" value="parken_eingeschraenkt_1_9" zoom-appear="14"/>
+    <osm-tag key="amenity" value="parken_eingeschraenkt_10_9999" zoom-appear="14"/>
+    <osm-tag key="amenity" value="parken_eingeschraenkt" zoom-appear="14"/>
+    <osm-tag key="amenity" value="parken_privat" zoom-appear="14"/>
+    <osm-tag key="amenity" value="parken_uneingeschraenkt_1_9" zoom-appear="14"/>
+    <osm-tag key="amenity" value="parken_uneingeschraenkt_10_9999" zoom-appear="14"/>
+    <osm-tag key="amenity" value="parken_uneingeschraenkt" zoom-appear="14"/>
+    <osm-tag key="amenity" value="parking" zoom-appear="14"/>
+    <osm-tag key="amenity" value="pharmacy" zoom-appear="14"/>
+    <osm-tag key="amenity" value="place_of_worship" zoom-appear="14"/>
+    <osm-tag key="amenity" value="police" zoom-appear="14"/>
+    <osm-tag key="amenity" value="post_office" zoom-appear="14"/>
+    <osm-tag key="amenity" value="pub" zoom-appear="14"/>
+    <osm-tag key="amenity" value="public_building" zoom-appear="14"/>
+    <osm-tag key="amenity" value="recycling" zoom-appear="14"/>
+    <osm-tag key="amenity" value="restaurant_cuisine" zoom-appear="14"/>
+    <osm-tag key="amenity" value="restaurant" zoom-appear="14"/>
+    <osm-tag key="amenity" value="school" zoom-appear="14"/>
+    <osm-tag key="amenity" value="shelter_basic_hut" zoom-appear="12"/>
+    <osm-tag key="amenity" value="shelter_lean_to" zoom-appear="12"/>
+    <osm-tag key="amenity" value="shelter" zoom-appear="14"/>
+    <osm-tag key="amenity" value="social_centre" zoom-appear="14"/>
+    <osm-tag key="amenity" value="social_facility" zoom-appear="14"/>
+    <osm-tag key="amenity" value="theatre" zoom-appear="14"/>
+    <osm-tag key="amenity" value="toilets" zoom-appear="14"/>
+    <osm-tag key="amenity" value="townhall" zoom-appear="14"/>
+    <osm-tag key="amenity" value="university" zoom-appear="14"/>
+    <osm-tag key="amenity" value="veterinary" zoom-appear="14"/>
+    <osm-tag key="amenity" value="waste_basket" zoom-appear="14"/>
+    <osm-tag key="amenity" value="waste_disposal" zoom-appear="14"/>
+    <osm-tag key="amenity" value="water_point" zoom-appear="14"/>
+    <osm-tag key="public_transport" value="bushaltestelle" zoom-appear="14"/>
+  </pois>
+  <!-- -->
+  <!-- MILITARY -->
+  <!-- -->
+  <pois>
+    <osm-tag key="military" value="bunker" zoom-appear="14"/>
+  </pois>
+  <!-- -->
+  <!-- SHOP -->
+  <!-- -->
+  <pois>
+    <osm-tag key="shop" value="alcohol" zoom-appear="14"/>
+    <osm-tag key="shop" value="art" zoom-appear="14"/>
+    <osm-tag key="shop" value="bag" zoom-appear="14"/>
+    <osm-tag key="shop" value="bakery" zoom-appear="14"/>
+    <osm-tag key="shop" value="beauty" zoom-appear="14"/>
+    <osm-tag key="shop" value="bed" zoom-appear="14"/>
+    <osm-tag key="shop" value="beverages" zoom-appear="14"/>
+    <osm-tag key="shop" value="bicycle" zoom-appear="14"/>
+    <osm-tag key="shop" value="books" zoom-appear="14"/>
+    <osm-tag key="shop" value="boutique" zoom-appear="14"/>
+    <osm-tag key="shop" value="butcher" zoom-appear="14"/>
+    <osm-tag key="shop" value="car" zoom-appear="14"/>
+    <osm-tag key="shop" value="car_repair" zoom-appear="14"/>
+    <osm-tag key="shop" value="carpet" zoom-appear="14"/>
+    <osm-tag key="shop" value="chemist" zoom-appear="14"/>
+    <osm-tag key="shop" value="chocolate" zoom-appear="14"/>
+    <osm-tag key="shop" value="clothes" zoom-appear="14"/>
+    <osm-tag key="shop" value="coffee" zoom-appear="14"/>
+    <osm-tag key="shop" value="computer" zoom-appear="14"/>
+    <osm-tag key="shop" value="confectionery" zoom-appear="14"/>
+    <osm-tag key="shop" value="convenience" zoom-appear="14"/>
+    <osm-tag key="shop" value="copyshop" zoom-appear="14"/>
+    <osm-tag key="shop" value="cosmetics" zoom-appear="14"/>
+    <osm-tag key="shop" value="deli" zoom-appear="14"/>
+    <osm-tag key="shop" value="department_store" zoom-appear="14"/>
+    <osm-tag key="shop" value="doityourself" zoom-appear="14"/>
+    <osm-tag key="shop" value="dry_cleaning" zoom-appear="14"/>
+    <osm-tag key="shop" value="electronics" zoom-appear="14"/>
+    <osm-tag key="shop" value="erotic" zoom-appear="14"/>
+    <osm-tag key="shop" value="fabric" zoom-appear="14"/>
+    <osm-tag key="shop" value="farm" zoom-appear="14"/>
+    <osm-tag key="shop" value="fashion" zoom-appear="14"/>
+    <osm-tag key="shop" value="fish" zoom-appear="14"/>
+    <osm-tag key="shop" value="fishmonger" zoom-appear="14"/>
+    <osm-tag key="shop" value="florist" zoom-appear="14"/>
+    <osm-tag key="shop" value="funeral_directors" zoom-appear="14"/>
+    <osm-tag key="shop" value="furniture" zoom-appear="14"/>
+    <osm-tag key="shop" value="garden_centre" zoom-appear="14"/>
+    <osm-tag key="shop" value="general" zoom-appear="14"/>
+    <osm-tag key="shop" value="gift" zoom-appear="14"/>
+    <osm-tag key="shop" value="greengrocer" zoom-appear="14"/>
+    <osm-tag key="shop" value="hairdresser" zoom-appear="14"/>
+    <osm-tag key="shop" value="hardware" zoom-appear="14"/>
+    <osm-tag key="shop" value="hearing_aids" zoom-appear="14"/>
+    <osm-tag key="shop" value="hifi" zoom-appear="14"/>
+    <osm-tag key="shop" value="ice_cream" zoom-appear="14"/>
+    <osm-tag key="shop" value="insurance" zoom-appear="14"/>
+    <osm-tag key="shop" value="interior_decoration" zoom-appear="14"/>
+    <osm-tag key="shop" value="jewelry" zoom-appear="14"/>
+    <osm-tag key="shop" value="kiosk" zoom-appear="14"/>
+    <osm-tag key="shop" value="kitchen" zoom-appear="14"/>
+    <osm-tag key="shop" value="laundry" zoom-appear="14"/>
+    <osm-tag key="shop" value="mall" zoom-appear="14"/>
+    <osm-tag key="shop" value="massage" zoom-appear="14"/>
+    <osm-tag key="shop" value="medical_supply" zoom-appear="14"/>
+    <osm-tag key="shop" value="mobile_phone" zoom-appear="14"/>
+    <osm-tag key="shop" value="motorcycle" zoom-appear="14"/>
+    <osm-tag key="shop" value="music" zoom-appear="14"/>
+    <osm-tag key="shop" value="musical_instrument" zoom-appear="14"/>
+    <osm-tag key="shop" value="newsagent" zoom-appear="14"/>
+    <osm-tag key="shop" value="optician" zoom-appear="14"/>
+    <osm-tag key="shop" value="outdoor" zoom-appear="14"/>
+    <osm-tag key="shop" value="paint" zoom-appear="14"/>
+    <osm-tag key="shop" value="pastry" zoom-appear="14"/>
+    <osm-tag key="shop" value="perfumery" zoom-appear="14"/>
+    <osm-tag key="shop" value="pet" zoom-appear="14"/>
+    <osm-tag key="shop" value="photo" zoom-appear="14"/>
+    <osm-tag key="shop" value="seafood" zoom-appear="14"/>
+    <osm-tag key="shop" value="second_hand" zoom-appear="14"/>
+    <osm-tag key="shop" value="shoes" zoom-appear="14"/>
+    <osm-tag key="shop" value="solarium" zoom-appear="14"/>
+    <osm-tag key="shop" value="spezialgeschaeft" zoom-appear="14"/>
+    <osm-tag key="shop" value="sports" zoom-appear="14"/>
+    <osm-tag key="shop" value="stationery" zoom-appear="14"/>
+    <osm-tag key="shop" value="supermarket" zoom-appear="14"/>
+    <osm-tag key="shop" value="tailor" zoom-appear="14"/>
+    <osm-tag key="shop" value="tanning" zoom-appear="14"/>
+    <osm-tag key="shop" value="tattoo" zoom-appear="14"/>
+    <osm-tag key="shop" value="tea" zoom-appear="14"/>
+    <osm-tag key="shop" value="tobacco" zoom-appear="14"/>
+    <osm-tag key="shop" value="toys" zoom-appear="14"/>
+    <osm-tag key="shop" value="trade" zoom-appear="14"/>
+    <osm-tag key="shop" value="travel_agency" zoom-appear="14"/>
+    <osm-tag key="shop" value="tyres" zoom-appear="14"/>
+    <osm-tag key="shop" value="vacant" zoom-appear="14"/>
+    <osm-tag key="shop" value="variety_store" zoom-appear="14"/>
+    <osm-tag key="shop" value="video" zoom-appear="14"/>
+    <osm-tag key="shop" value="watches" zoom-appear="14"/>
+    <osm-tag key="shop" value="wine" zoom-appear="14"/>
+  </pois>
+  <!-- -->
+  <!-- HIGHWAY -->
+  <!-- -->
+  <pois>
+    <osm-tag key="highway" value="bus_stop" zoom-appear="14"/>
+    <osm-tag key="highway" value="emergency_access_point" zoom-appear="14"/>
+    <osm-tag key="highway" value="mini_roundabout" zoom-appear="14"/>
+    <osm-tag key="highway" value="motorway_junction" zoom-appear="14"/>
+    <osm-tag key="highway" value="rest_area" zoom-appear="14"/>
+    <osm-tag key="highway" value="services" zoom-appear="14"/>
+    <osm-tag key="highway" value="turning_circle" zoom-appear="14"/>
+    <osm-tag key="highway" value="turning_loop" zoom-appear="14"/>
+  </pois>
+  <!-- -->
+  <!-- FORD -->
+  <!-- -->
+  <pois>
+    <osm-tag key="ford" value="yes" equivalent-values="stepping_stones" zoom-appear="14"/>
+  </pois>
+  <!-- -->
+  <!-- LEISURE -->
+  <!-- -->
+  <pois>
+    <osm-tag key="leisure" value="beach_resort" zoom-appear="14"/>
+    <osm-tag key="leisure" value="bird_hide" zoom-appear="14"/>
+    <osm-tag key="leisure" value="common" zoom-appear="14"/>
+    <osm-tag key="leisure" value="dance" zoom-appear="14"/>
+    <osm-tag key="leisure" value="dog_park" zoom-appear="14"/>
+    <osm-tag key="leisure" value="firepit" zoom-appear="14"/>
+    <osm-tag key="leisure" value="fishing" zoom-appear="14"/>
+    <osm-tag key="leisure" value="fitness_centre" zoom-appear="14"/>
+    <osm-tag key="leisure" value="fitness_station" zoom-appear="14"/>
+    <osm-tag key="leisure" value="garden" zoom-appear="14"/>
+    <osm-tag key="leisure" value="golf_course" zoom-appear="14"/>
+    <osm-tag key="leisure" value="horse_riding" zoom-appear="14"/>
+    <osm-tag key="leisure" value="ice_rink" zoom-appear="14"/>
+    <osm-tag key="leisure" value="marina" zoom-appear="14"/>
+    <osm-tag key="leisure" value="miniature_golf" zoom-appear="14"/>
+    <osm-tag key="leisure" value="nature_reserve" zoom-appear="14"/>
+    <osm-tag key="leisure" value="picnic_table" zoom-appear="14"/>
+    <osm-tag key="leisure" value="pitch" zoom-appear="14"/>
+    <osm-tag key="leisure" value="playground" zoom-appear="14"/>
+    <osm-tag key="leisure" value="recreation_ground" zoom-appear="14"/>
+    <osm-tag key="leisure" value="sauna" zoom-appear="14"/>
+    <osm-tag key="leisure" value="slipway" zoom-appear="14"/>
+    <osm-tag key="leisure" value="sports_centre_flaeche" zoom-appear="14"/>
+    <osm-tag key="leisure" value="sports_centre_gebaeude" zoom-appear="14"/>
+    <osm-tag key="leisure" value="stadium" zoom-appear="14"/>
+    <osm-tag key="leisure" value="swimming_pool" zoom-appear="14"/>
+    <osm-tag key="leisure" value="swimming_pool_private" zoom-appear="14"/>
+    <osm-tag key="leisure" value="track" zoom-appear="14"/>
+    <osm-tag key="leisure" value="water_park" zoom-appear="14"/>
+    <osm-tag key="leisure" value="water_park_gebaeude" zoom-appear="14"/>
+  </pois>
+  <!-- -->
+  <!-- GEOLOGICAL -->
+  <!-- -->
+  <pois>
+    <osm-tag key="geological" value="outcrop" zoom-appear="14"/>
+    <osm-tag key="geological" value="palaeontological_site" zoom-appear="14"/>
+  </pois>
+  <!-- -->
+  <!-- SPORT -->
+  <!-- -->
+  <pois>
+    <osm-tag key="golf" value="pin" zoom-appear="14"/>
+    <osm-tag key="golf" value="tee" zoom-appear="14"/>
+    <osm-tag key="sport" value="10pin" zoom-appear="14"/>
+    <osm-tag key="sport" value="9pin" zoom-appear="14"/>
+    <osm-tag key="sport" value="archery" zoom-appear="14"/>
+    <osm-tag key="sport" value="athletics" zoom-appear="14"/>
+    <osm-tag key="sport" value="basketball" zoom-appear="14"/>
+    <osm-tag key="sport" value="beachvolleyball" zoom-appear="14"/>
+    <osm-tag key="sport" value="boules" zoom-appear="14"/>
+    <osm-tag key="sport" value="canoe" zoom-appear="14"/>
+    <osm-tag key="sport" value="chess" zoom-appear="14"/>
+    <osm-tag key="sport" value="climbing" zoom-appear="14"/>
+    <osm-tag key="sport" value="equestrian" zoom-appear="14"/>
+    <osm-tag key="sport" value="exercise" zoom-appear="14"/>
+    <osm-tag key="sport" value="fitness" zoom-appear="14"/>
+    <osm-tag key="sport" value="fzk_sport_sonstige" zoom-appear="14"/>
+    <osm-tag key="sport" value="golf" zoom-appear="14"/>
+    <osm-tag key="sport" value="gymnastics" zoom-appear="14"/>
+    <osm-tag key="sport" value="model_aerodrome" zoom-appear="14"/>
+    <osm-tag key="sport" value="multi" zoom-appear="14"/>
+    <osm-tag key="sport" value="rowing" zoom-appear="14"/>
+    <osm-tag key="sport" value="running" zoom-appear="14"/>
+    <osm-tag key="sport" value="scuba_diving" zoom-appear="14"/>
+    <osm-tag key="sport" value="shooting" zoom-appear="14"/>
+    <osm-tag key="sport" value="skateboard" zoom-appear="14"/>
+    <osm-tag key="sport" value="soccer" zoom-appear="14"/>
+    <osm-tag key="sport" value="swimming" zoom-appear="14"/>
+    <osm-tag key="sport" value="table_tennis" zoom-appear="14"/>
+    <osm-tag key="sport" value="tennis" zoom-appear="14"/>
+    <osm-tag key="sport" value="volleyball" zoom-appear="14"/>
+  </pois>
+  <!-- -->
+  <!-- WATERWAY -->
+  <!-- -->
+  <pois>
+    <osm-tag key="waterway" value="lock_gate" zoom-appear="14"/>
+    <osm-tag key="waterway" value="water_point" zoom-appear="14"/>
+    <osm-tag key="waterway" value="waterfall" zoom-appear="14"/>
+    <osm-tag key="waterway" value="weir" zoom-appear="14"/>
+  </pois>
+  <!-- -->
+  <!-- OFFICE -->
+  <!-- -->
+  <pois>
+    <osm-tag key="office" value="administrative" zoom-appear="14"/>
+    <osm-tag key="office" value="employment_agency" zoom-appear="14"/>
+    <osm-tag key="office" value="government" zoom-appear="14"/>
+    <osm-tag key="office" value="ngo" zoom-appear="14"/>
+    <osm-tag key="office" value="quango" zoom-appear="14"/>
+  </pois>
+  <!-- -->
+  <!-- CEMETERY -->
+  <!-- -->
+  <pois>
+    <osm-tag key="cemetery" value="grabstaette_bedeutende_person" zoom-appear="14"/>
+  </pois>
+  <!-- -->
+  <!-- ADRESSE -->
+  <!-- -->
+  <pois>
+    <osm-tag key="fzk_adresse" value="yes" zoom-appear="14"/>
+  </pois>
+  <!-- -->
+  <!-- EMERGENCY -->
+  <!-- -->
+  <pois>
+    <osm-tag key="emergency" value="fire_hydrant" zoom-appear="12"/>
+    <osm-tag key="emergency" value="suction_point" zoom-appear="12"/>
+  </pois>
+  <!-- -->
+  <!-- NODE_NETWORK -->
+  <!-- -->
+  <pois>
+    <osm-tag key="node_network" value="node_bicycle" zoom-appear="12"/>
+    <osm-tag key="node_network" value="node_hiking" zoom-appear="12"/>
+    <osm-tag key="node_network" value="node_horse" zoom-appear="12"/>
+    <osm-tag key="node_network" value="node_canoe" zoom-appear="12"/>
+    <osm-tag key="node_network" value="node_motorboat" zoom-appear="12"/>
+    <osm-tag key="node_network" value="node_inline_skates" zoom-appear="12"/>
+  </pois>
+  <!-- -->
+  <!-- CANOE / WHITEWATER -->
+  <!-- -->
+  <pois>
+    <osm-tag key="canoe" value="put_in" zoom-appear="14"/>
+    <osm-tag key="canoe" value="egress" zoom-appear="14"/>
+    <osm-tag key="canoe" value="put_in;egress" zoom-appear="14"/>
+    <osm-tag key="whitewater" value="put_in" zoom-appear="14"/>
+    <osm-tag key="whitewater" value="egress" zoom-appear="14"/>
+    <osm-tag key="whitewater" value="put_in;egress" zoom-appear="14"/>
+  </pois>
+  <!-- -->
+  <!-- AEROWAY -->
+  <!-- -->
+  <ways>
+    <osm-tag key="aeroway" value="aerodrome_huge" zoom-appear="6"/>
+    <osm-tag key="aeroway" value="aerodrome_large" zoom-appear="7"/>
+    <osm-tag key="aeroway" value="aerodrome_medium" zoom-appear="8"/>
+    <osm-tag key="aeroway" value="aerodrome_micro" zoom-appear="11"/>
+    <osm-tag key="aeroway" value="aerodrome_nano" zoom-appear="12"/>
+    <osm-tag key="aeroway" value="aerodrome_small" zoom-appear="9"/>
+    <osm-tag key="aeroway" value="aerodrome_tiny" zoom-appear="10"/>
+    <osm-tag key="aeroway" value="aerodrome" zoom-appear="13"/>
+    <osm-tag key="aeroway" value="apron" zoom-appear="12"/>
+    <osm-tag key="aeroway" value="hangar" zoom-appear="13"/>
+    <osm-tag key="aeroway" value="helipad" zoom-appear="14"/>
+    <osm-tag key="aeroway" value="runway_bridge" zoom-appear="10"/>
+    <osm-tag key="aeroway" value="runway_tunnel" zoom-appear="10"/>
+    <osm-tag key="aeroway" value="runway" zoom-appear="10"/>
+    <osm-tag key="aeroway" value="taxiway_bridge" zoom-appear="10"/>
+    <osm-tag key="aeroway" value="taxiway_tunnel" zoom-appear="10"/>
+    <osm-tag key="aeroway" value="taxiway" zoom-appear="10"/>
+    <osm-tag key="aeroway" value="terminal" zoom-appear="13"/>
+    <osm-tag key="aeroway" value="tower" zoom-appear="13"/>
+  </ways>
+  <!-- -->
+  <!-- AMENITY -->
+  <!-- -->
+  <ways>
+    <osm-tag key="amenity" value="bicycle_parking" zoom-appear="14"/>
+    <osm-tag key="amenity" value="biergarten" zoom-appear="12"/>
+    <osm-tag key="amenity" value="college" zoom-appear="12"/>
+    <osm-tag key="amenity" value="fuel" zoom-appear="12"/>
+    <osm-tag key="amenity" value="grave_yard" zoom-appear="14"/>
+    <osm-tag key="amenity" value="hospital" zoom-appear="12"/>
+    <osm-tag key="amenity" value="kindergarten" zoom-appear="14"/>
+    <osm-tag key="amenity" value="parken_eingeschraenkt" zoom-appear="12"/>
+    <osm-tag key="amenity" value="parken_privat" zoom-appear="12"/>
+    <osm-tag key="amenity" value="parkflaeche_eingeschraenkt" zoom-appear="16"/>
+    <osm-tag key="amenity" value="parkflaeche_privat" zoom-appear="16"/>
+    <osm-tag key="amenity" value="parking_space" zoom-appear="16"/>
+    <osm-tag key="amenity" value="parking" zoom-appear="12"/>
+    <osm-tag key="amenity" value="place_of_worship" zoom-appear="14"/>
+    <osm-tag key="amenity" value="prison" zoom-appear="12"/>
+    <osm-tag key="amenity" value="school" zoom-appear="12"/>
+    <osm-tag key="amenity" value="university" zoom-appear="12"/>
+  </ways>
+  <!-- -->
+  <!-- BUILDING -->
+  <!-- -->
+  <ways>
+    <osm-tag key="building" value="anbetungsort" zoom-appear="13"/>
+    <osm-tag key="building" value="bahnhof" zoom-appear="13"/>
+    <osm-tag key="building" value="bildungseinrichtung" zoom-appear="13"/>
+    <osm-tag key="building" value="dach" zoom-appear="13"/>
+    <osm-tag key="building" value="gebaeude_allgemein" zoom-appear="13"/>
+    <osm-tag key="building" value="gebaeude_garage" zoom-appear="13"/>
+    <osm-tag key="building" value="gebaeude_oeffentlich" zoom-appear="13"/>
+    <osm-tag key="building" value="gewaechshaus" zoom-appear="13"/>
+    <osm-tag key="building" value="krankenhaus" zoom-appear="13"/>
+    <osm-tag key="building" value="ruine" zoom-appear="13"/>
+    <osm-tag key="building" value="sportanlage" zoom-appear="13"/>
+  </ways>
+  <!-- -->
+  <!-- LANDUSE -->
+  <!-- -->
+  <ways>
+    <osm-tag key="landuse" value="allotments" zoom-appear="12"/>
+    <osm-tag key="landuse" value="allotments_plot" zoom-appear="12"/>
+    <osm-tag key="landuse" value="basin" zoom-appear="12"/>
+    <osm-tag key="landuse" value="brownfield" zoom-appear="12"/>
+    <osm-tag key="landuse" value="cemetery_huge" zoom-appear="6"/>
+    <osm-tag key="landuse" value="cemetery_large" zoom-appear="7"/>
+    <osm-tag key="landuse" value="cemetery_medium" zoom-appear="8"/>
+    <osm-tag key="landuse" value="cemetery_micro" zoom-appear="11"/>
+    <osm-tag key="landuse" value="cemetery_nano" zoom-appear="12"/>
+    <osm-tag key="landuse" value="cemetery_small" zoom-appear="9"/>
+    <osm-tag key="landuse" value="cemetery_tiny" zoom-appear="10"/>
+    <osm-tag key="landuse" value="cemetery" zoom-appear="12"/>
+    <osm-tag key="landuse" value="commercial_huge" zoom-appear="6"/>
+    <osm-tag key="landuse" value="commercial_large" zoom-appear="7"/>
+    <osm-tag key="landuse" value="commercial_medium" zoom-appear="8"/>
+    <osm-tag key="landuse" value="commercial_micro" zoom-appear="11"/>
+    <osm-tag key="landuse" value="commercial_nano" zoom-appear="12"/>
+    <osm-tag key="landuse" value="commercial_small" zoom-appear="9"/>
+    <osm-tag key="landuse" value="commercial_tiny" zoom-appear="10"/>
+    <osm-tag key="landuse" value="commercial" zoom-appear="12"/>
+    <osm-tag key="landuse" value="construction" zoom-appear="12"/>
+    <osm-tag key="landuse" value="depot" zoom-appear="12"/>
+    <osm-tag key="landuse" value="farm_huge" zoom-appear="6"/>
+    <osm-tag key="landuse" value="farm_large" zoom-appear="7"/>
+    <osm-tag key="landuse" value="farm_medium" zoom-appear="8"/>
+    <osm-tag key="landuse" value="farm_micro" zoom-appear="11"/>
+    <osm-tag key="landuse" value="farm_nano" zoom-appear="12"/>
+    <osm-tag key="landuse" value="farm_small" zoom-appear="9"/>
+    <osm-tag key="landuse" value="farm_tiny" zoom-appear="10"/>
+    <osm-tag key="landuse" value="farm" zoom-appear="12"/>
+    <osm-tag key="landuse" value="farmland_huge" zoom-appear="6"/>
+    <osm-tag key="landuse" value="farmland_large" zoom-appear="7"/>
+    <osm-tag key="landuse" value="farmland_medium" zoom-appear="8"/>
+    <osm-tag key="landuse" value="farmland_micro" zoom-appear="11"/>
+    <osm-tag key="landuse" value="farmland_nano" zoom-appear="12"/>
+    <osm-tag key="landuse" value="farmland_small" zoom-appear="9"/>
+    <osm-tag key="landuse" value="farmland_tiny" zoom-appear="10"/>
+    <osm-tag key="landuse" value="farmland" zoom-appear="12"/>
+    <osm-tag key="landuse" value="farmyard" zoom-appear="12"/>
+    <osm-tag key="landuse" value="field_huge" zoom-appear="6"/>
+    <osm-tag key="landuse" value="field_large" zoom-appear="7"/>
+    <osm-tag key="landuse" value="field_medium" zoom-appear="8"/>
+    <osm-tag key="landuse" value="field_micro" zoom-appear="11"/>
+    <osm-tag key="landuse" value="field_nano" zoom-appear="12"/>
+    <osm-tag key="landuse" value="field_small" zoom-appear="9"/>
+    <osm-tag key="landuse" value="field_tiny" zoom-appear="10"/>
+    <osm-tag key="landuse" value="field" zoom-appear="12"/>
+    <osm-tag key="landuse" value="forest_huge" zoom-appear="6"/>
+    <osm-tag key="landuse" value="forest_large" zoom-appear="7"/>
+    <osm-tag key="landuse" value="forest_medium" zoom-appear="8"/>
+    <osm-tag key="landuse" value="forest_micro" zoom-appear="11"/>
+    <osm-tag key="landuse" value="forest_nano" zoom-appear="12"/>
+    <osm-tag key="landuse" value="forest_small" zoom-appear="9"/>
+    <osm-tag key="landuse" value="forest_tiny" zoom-appear="10"/>
+    <osm-tag key="landuse" value="forest" zoom-appear="12"/>
+    <osm-tag key="landuse" value="garages" zoom-appear="12"/>
+    <osm-tag key="landuse" value="grass_huge" zoom-appear="6"/>
+    <osm-tag key="landuse" value="grass_large" zoom-appear="7"/>
+    <osm-tag key="landuse" value="grass_medium" zoom-appear="8"/>
+    <osm-tag key="landuse" value="grass_micro" zoom-appear="11"/>
+    <osm-tag key="landuse" value="grass_nano" zoom-appear="12"/>
+    <osm-tag key="landuse" value="grass_small" zoom-appear="9"/>
+    <osm-tag key="landuse" value="grass_tiny" zoom-appear="10"/>
+    <osm-tag key="landuse" value="grass" zoom-appear="12"/>
+    <osm-tag key="landuse" value="greenfield" zoom-appear="12"/>
+    <osm-tag key="landuse" value="greenhouse_horticulture" zoom-appear="12"/>
+    <osm-tag key="landuse" value="harbour" zoom-appear="10"/>
+    <osm-tag key="landuse" value="industrial_huge" zoom-appear="6"/>
+    <osm-tag key="landuse" value="industrial_large" zoom-appear="7"/>
+    <osm-tag key="landuse" value="industrial_medium" zoom-appear="8"/>
+    <osm-tag key="landuse" value="industrial_micro" zoom-appear="11"/>
+    <osm-tag key="landuse" value="industrial_nano" zoom-appear="12"/>
+    <osm-tag key="landuse" value="industrial_small" zoom-appear="9"/>
+    <osm-tag key="landuse" value="industrial_tiny" zoom-appear="10"/>
+    <osm-tag key="landuse" value="industrial" zoom-appear="12"/>
+    <osm-tag key="landuse" value="landfill_huge" zoom-appear="6"/>
+    <osm-tag key="landuse" value="landfill_large" zoom-appear="7"/>
+    <osm-tag key="landuse" value="landfill_medium" zoom-appear="8"/>
+    <osm-tag key="landuse" value="landfill_micro" zoom-appear="11"/>
+    <osm-tag key="landuse" value="landfill_nano" zoom-appear="12"/>
+    <osm-tag key="landuse" value="landfill_small" zoom-appear="9"/>
+    <osm-tag key="landuse" value="landfill_tiny" zoom-appear="10"/>
+    <osm-tag key="landuse" value="landfill" zoom-appear="12"/>
+    <osm-tag key="landuse" value="meadow_huge" zoom-appear="6"/>
+    <osm-tag key="landuse" value="meadow_large" zoom-appear="7"/>
+    <osm-tag key="landuse" value="meadow_medium" zoom-appear="8"/>
+    <osm-tag key="landuse" value="meadow_micro" zoom-appear="11"/>
+    <osm-tag key="landuse" value="meadow_nano" zoom-appear="12"/>
+    <osm-tag key="landuse" value="meadow_small" zoom-appear="9"/>
+    <osm-tag key="landuse" value="meadow_tiny" zoom-appear="10"/>
+    <osm-tag key="landuse" value="meadow" zoom-appear="12"/>
+    <osm-tag key="landuse" value="military_huge" zoom-appear="6"/>
+    <osm-tag key="landuse" value="military_large" zoom-appear="7"/>
+    <osm-tag key="landuse" value="military_medium" zoom-appear="8"/>
+    <osm-tag key="landuse" value="military_micro" zoom-appear="11"/>
+    <osm-tag key="landuse" value="military_nano" zoom-appear="12"/>
+    <osm-tag key="landuse" value="military_small" zoom-appear="9"/>
+    <osm-tag key="landuse" value="military_tiny" zoom-appear="10"/>
+    <osm-tag key="landuse" value="military" zoom-appear="12"/>
+    <osm-tag key="landuse" value="orchard" zoom-appear="12"/>
+    <osm-tag key="landuse" value="plant_nursery" zoom-appear="12"/>
+    <osm-tag key="landuse" label-position="true" value="quarry_huge" zoom-appear="6"/>
+    <osm-tag key="landuse" label-position="true" value="quarry_large" zoom-appear="7"/>
+    <osm-tag key="landuse" label-position="true" value="quarry_medium" zoom-appear="8"/>
+    <osm-tag key="landuse" label-position="true" value="quarry_micro" zoom-appear="11"/>
+    <osm-tag key="landuse" label-position="true" value="quarry_nano" zoom-appear="12"/>
+    <osm-tag key="landuse" label-position="true" value="quarry_small" zoom-appear="9"/>
+    <osm-tag key="landuse" label-position="true" value="quarry_tiny" zoom-appear="10"/>
+    <osm-tag key="landuse" label-position="true" value="quarry" zoom-appear="12"/>
+    <osm-tag key="landuse" value="railway" zoom-appear="10"/>
+    <osm-tag key="landuse" value="recreation_ground" zoom-appear="12"/>
+    <osm-tag key="landuse" value="reservoir_huge" zoom-appear="6"/>
+    <osm-tag key="landuse" value="reservoir_large" zoom-appear="7"/>
+    <osm-tag key="landuse" value="reservoir_medium" zoom-appear="8"/>
+    <osm-tag key="landuse" value="reservoir_micro" zoom-appear="11"/>
+    <osm-tag key="landuse" value="reservoir_nano" zoom-appear="12"/>
+    <osm-tag key="landuse" value="reservoir_small" zoom-appear="9"/>
+    <osm-tag key="landuse" value="reservoir_tiny" zoom-appear="10"/>
+    <osm-tag key="landuse" value="reservoir" zoom-appear="12"/>
+    <osm-tag key="landuse" value="residential_huge" zoom-appear="6"/>
+    <osm-tag key="landuse" value="residential_large" zoom-appear="7"/>
+    <osm-tag key="landuse" value="residential_medium" zoom-appear="8"/>
+    <osm-tag key="landuse" value="residential_micro" zoom-appear="11"/>
+    <osm-tag key="landuse" value="residential_nano" zoom-appear="12"/>
+    <osm-tag key="landuse" value="residential_small" zoom-appear="9"/>
+    <osm-tag key="landuse" value="residential_tiny" zoom-appear="10"/>
+    <osm-tag key="landuse" value="residential" zoom-appear="12"/>
+    <osm-tag key="landuse" value="retail" zoom-appear="12"/>
+    <osm-tag key="landuse" value="salt_pond_huge" zoom-appear="6"/>
+    <osm-tag key="landuse" value="salt_pond_large" zoom-appear="7"/>
+    <osm-tag key="landuse" value="salt_pond_medium" zoom-appear="8"/>
+    <osm-tag key="landuse" value="salt_pond_micro" zoom-appear="11"/>
+    <osm-tag key="landuse" value="salt_pond_nano" zoom-appear="12"/>
+    <osm-tag key="landuse" value="salt_pond_small" zoom-appear="9"/>
+    <osm-tag key="landuse" value="salt_pond_tiny" zoom-appear="10"/>
+    <osm-tag key="landuse" value="salt_pond" zoom-appear="12"/>
+    <osm-tag key="landuse" value="village_green" zoom-appear="12"/>
+    <osm-tag key="landuse" value="vineyard_huge" zoom-appear="6"/>
+    <osm-tag key="landuse" value="vineyard_large" zoom-appear="7"/>
+    <osm-tag key="landuse" value="vineyard_medium" zoom-appear="8"/>
+    <osm-tag key="landuse" value="vineyard_micro" zoom-appear="11"/>
+    <osm-tag key="landuse" value="vineyard_nano" zoom-appear="12"/>
+    <osm-tag key="landuse" value="vineyard_small" zoom-appear="9"/>
+    <osm-tag key="landuse" value="vineyard_tiny" zoom-appear="10"/>
+    <osm-tag key="landuse" value="vineyard" zoom-appear="12"/>
+  </ways>
+  <!-- -->
+  <!-- LEISURE -->
+  <!-- -->
+  <ways>
+    <osm-tag key="leisure" value="common" zoom-appear="12"/>
+    <osm-tag key="leisure" value="dog_park" zoom-appear="14"/>
+    <osm-tag key="leisure" value="fitness_centre" zoom-appear="14"/>
+    <osm-tag key="leisure" value="garden" zoom-appear="14"/>
+    <osm-tag key="leisure" value="golf_course" zoom-appear="10"/>
+    <osm-tag key="leisure" value="horse_riding" zoom-appear="14"/>
+    <osm-tag key="leisure" value="ice_rink" zoom-appear="14"/>
+    <osm-tag key="leisure" value="marina" zoom-appear="12"/>
+    <osm-tag key="leisure" value="miniature_golf" zoom-appear="14"/>
+    <osm-tag key="leisure" value="nature_reserve" zoom-appear="10"/>
+    <osm-tag key="leisure" value="outdoor_seating" zoom-appear="14"/>
+    <osm-tag key="leisure" value="park_huge" zoom-appear="6"/>
+    <osm-tag key="leisure" value="park_large" zoom-appear="7"/>
+    <osm-tag key="leisure" value="park_medium" zoom-appear="8"/>
+    <osm-tag key="leisure" value="park_micro" zoom-appear="11"/>
+    <osm-tag key="leisure" value="park_nano" zoom-appear="12"/>
+    <osm-tag key="leisure" value="park_small" zoom-appear="9"/>
+    <osm-tag key="leisure" value="park_tiny" zoom-appear="10"/>
+    <osm-tag key="leisure" value="park" zoom-appear="13"/>
+    <osm-tag key="leisure" value="pitch" zoom-appear="12"/>
+    <osm-tag key="leisure" value="playground" zoom-appear="14"/>
+    <osm-tag key="leisure" value="recreation_ground" zoom-appear="12"/>
+    <osm-tag key="leisure" value="sports_centre" zoom-appear="12"/>
+    <osm-tag key="leisure" value="stadium" zoom-appear="12"/>
+    <osm-tag key="leisure" value="swimming_pool_private" zoom-appear="14"/>
+    <osm-tag key="leisure" value="swimming_pool" zoom-appear="14"/>
+    <osm-tag key="leisure" value="track" zoom-appear="12"/>
+    <osm-tag key="leisure" value="water_park" zoom-appear="12"/>
+    <osm-tag key="schutzgebiet" value="strict_nature_reserve" zoom-appear="10"/>
+  </ways>
+  <!-- -->
+  <!-- MILITARY -->
+  <!-- -->
+  <ways>
+    <osm-tag key="military" value="bunker" zoom-appear="14"/>
+  </ways>
+  <!-- -->
+  <!-- FREIZEITKARTE (internal) -->
+  <!-- -->
+  <ways>
+    <osm-tag key="freizeitkarte" value="land" zoom-appear="4"/>
+    <osm-tag key="freizeitkarte" value="meer" zoom-appear="4"/>
+  </ways>
+  <!-- -->
+  <!-- NATURAL -->
+  <!-- -->
+  <ways>
+    <osm-tag key="natural" value="arete" zoom-appear="10"/>
+    <osm-tag key="natural" value="bare_rock_huge" zoom-appear="6"/>
+    <osm-tag key="natural" value="bare_rock_large" zoom-appear="7"/>
+    <osm-tag key="natural" value="bare_rock_medium" zoom-appear="8"/>
+    <osm-tag key="natural" value="bare_rock_micro" zoom-appear="11"/>
+    <osm-tag key="natural" value="bare_rock_nano" zoom-appear="12"/>
+    <osm-tag key="natural" value="bare_rock_small" zoom-appear="9"/>
+    <osm-tag key="natural" value="bare_rock_tiny" zoom-appear="10"/>
+    <osm-tag key="natural" value="bare_rock" zoom-appear="13"/>
+    <osm-tag key="natural" value="beach" zoom-appear="10"/>
+    <osm-tag key="natural" value="bedrock" zoom-appear="10"/>
+    <osm-tag key="natural" value="cliff" zoom-appear="12"/>
+    <osm-tag key="natural" value="fell_huge" zoom-appear="6"/>
+    <osm-tag key="natural" value="fell_large" zoom-appear="7"/>
+    <osm-tag key="natural" value="fell_medium" zoom-appear="7"/>
+    <osm-tag key="natural" value="fell_micro" zoom-appear="11"/>
+    <osm-tag key="natural" value="fell_nano" zoom-appear="12"/>
+    <osm-tag key="natural" value="fell_small" zoom-appear="9"/>
+    <osm-tag key="natural" value="fell_tiny" zoom-appear="10"/>
+    <osm-tag key="natural" value="fell" zoom-appear="13"/>
+    <osm-tag key="natural" value="feuchtwiese_huge" zoom-appear="6"/>
+    <osm-tag key="natural" value="feuchtwiese_large" zoom-appear="7"/>
+    <osm-tag key="natural" value="feuchtwiese_medium" zoom-appear="8"/>
+    <osm-tag key="natural" value="feuchtwiese_micro" zoom-appear="11"/>
+    <osm-tag key="natural" value="feuchtwiese_nano" zoom-appear="12"/>
+    <osm-tag key="natural" value="feuchtwiese_small" zoom-appear="9"/>
+    <osm-tag key="natural" value="feuchtwiese_tiny" zoom-appear="10"/>
+    <osm-tag key="natural" value="feuchtwiese" zoom-appear="13"/>
+    <osm-tag key="natural" value="glacier_huge" zoom-appear="6"/>
+    <osm-tag key="natural" value="glacier_large" zoom-appear="7"/>
+    <osm-tag key="natural" value="glacier_medium" zoom-appear="8"/>
+    <osm-tag key="natural" value="glacier_micro" zoom-appear="11"/>
+    <osm-tag key="natural" value="glacier_nano" zoom-appear="12"/>
+    <osm-tag key="natural" value="glacier_small" zoom-appear="9"/>
+    <osm-tag key="natural" value="glacier_tiny" zoom-appear="10"/>
+    <osm-tag key="natural" value="glacier" zoom-appear="13"/>
+    <osm-tag key="natural" value="grassland_huge" zoom-appear="6"/>
+    <osm-tag key="natural" value="grassland_large" zoom-appear="7"/>
+    <osm-tag key="natural" value="grassland_medium" zoom-appear="8"/>
+    <osm-tag key="natural" value="grassland_micro" zoom-appear="11"/>
+    <osm-tag key="natural" value="grassland_nano" zoom-appear="12"/>
+    <osm-tag key="natural" value="grassland_small" zoom-appear="9"/>
+    <osm-tag key="natural" value="grassland_tiny" zoom-appear="10"/>
+    <osm-tag key="natural" value="grassland" zoom-appear="13"/>
+    <osm-tag key="natural" value="heath_huge" zoom-appear="6"/>
+    <osm-tag key="natural" value="heath_large" zoom-appear="7"/>
+    <osm-tag key="natural" value="heath_medium" zoom-appear="8"/>
+    <osm-tag key="natural" value="heath_micro" zoom-appear="11"/>
+    <osm-tag key="natural" value="heath_nano" zoom-appear="12"/>
+    <osm-tag key="natural" value="heath_small" zoom-appear="9"/>
+    <osm-tag key="natural" value="heath_tiny" zoom-appear="10"/>
+    <osm-tag key="natural" value="heath" zoom-appear="13"/>
+    <osm-tag key="natural" value="marsh_huge" zoom-appear="6"/>
+    <osm-tag key="natural" value="marsh_large" zoom-appear="7"/>
+    <osm-tag key="natural" value="marsh_medium" zoom-appear="8"/>
+    <osm-tag key="natural" value="marsh_micro" zoom-appear="11"/>
+    <osm-tag key="natural" value="marsh_nano" zoom-appear="12"/>
+    <osm-tag key="natural" value="marsh_small" zoom-appear="9"/>
+    <osm-tag key="natural" value="marsh_tiny" zoom-appear="10"/>
+    <osm-tag key="natural" value="marsh" zoom-appear="13"/>
+    <osm-tag key="natural" value="moorgebiet_huge" zoom-appear="6"/>
+    <osm-tag key="natural" value="moorgebiet_large" zoom-appear="7"/>
+    <osm-tag key="natural" value="moorgebiet_medium" zoom-appear="8"/>
+    <osm-tag key="natural" value="moorgebiet_micro" zoom-appear="11"/>
+    <osm-tag key="natural" value="moorgebiet_nano" zoom-appear="12"/>
+    <osm-tag key="natural" value="moorgebiet_small" zoom-appear="9"/>
+    <osm-tag key="natural" value="moorgebiet_tiny" zoom-appear="10"/>
+    <osm-tag key="natural" value="moorgebiet" zoom-appear="13"/>
+    <osm-tag key="natural" value="mud_huge" zoom-appear="6"/>
+    <osm-tag key="natural" value="mud_large" zoom-appear="7"/>
+    <osm-tag key="natural" value="mud_medium" zoom-appear="8"/>
+    <osm-tag key="natural" value="mud_micro" zoom-appear="11"/>
+    <osm-tag key="natural" value="mud_nano" zoom-appear="12"/>
+    <osm-tag key="natural" value="mud_small" zoom-appear="9"/>
+    <osm-tag key="natural" value="mud_tiny" zoom-appear="10"/>
+    <osm-tag key="natural" value="mud" zoom-appear="13"/>
+    <osm-tag key="natural" value="reef_huge" zoom-appear="6"/>
+    <osm-tag key="natural" value="reef_large" zoom-appear="7"/>
+    <osm-tag key="natural" value="reef_medium" zoom-appear="8"/>
+    <osm-tag key="natural" value="reef_micro" zoom-appear="11"/>
+    <osm-tag key="natural" value="reef_nano" zoom-appear="12"/>
+    <osm-tag key="natural" value="reef_small" zoom-appear="9"/>
+    <osm-tag key="natural" value="reef_tiny" zoom-appear="10"/>
+    <osm-tag key="natural" value="reef" zoom-appear="13"/>
+    <osm-tag key="natural" value="ridge" zoom-appear="10"/>
+    <osm-tag key="natural" value="rock" zoom-appear="10"/>
+    <osm-tag key="natural" value="saline_huge" zoom-appear="6"/>
+    <osm-tag key="natural" value="saline_large" zoom-appear="7"/>
+    <osm-tag key="natural" value="saline_medium" zoom-appear="8"/>
+    <osm-tag key="natural" value="saline_micro" zoom-appear="11"/>
+    <osm-tag key="natural" value="saline_nano" zoom-appear="12"/>
+    <osm-tag key="natural" value="saline_small" zoom-appear="9"/>
+    <osm-tag key="natural" value="saline_tiny" zoom-appear="10"/>
+    <osm-tag key="natural" value="saline" zoom-appear="13"/>
+    <osm-tag key="natural" value="sand_huge" zoom-appear="6"/>
+    <osm-tag key="natural" value="sand_large" zoom-appear="7"/>
+    <osm-tag key="natural" value="sand_medium" zoom-appear="8"/>
+    <osm-tag key="natural" value="sand_micro" zoom-appear="11"/>
+    <osm-tag key="natural" value="sand_nano" zoom-appear="12"/>
+    <osm-tag key="natural" value="sand_small" zoom-appear="9"/>
+    <osm-tag key="natural" value="sand_tiny" zoom-appear="10"/>
+    <osm-tag key="natural" value="sand" zoom-appear="13"/>
+    <osm-tag key="natural" value="schilf_huge" zoom-appear="6"/>
+    <osm-tag key="natural" value="schilf_large" zoom-appear="7"/>
+    <osm-tag key="natural" value="schilf_medium" zoom-appear="8"/>
+    <osm-tag key="natural" value="schilf_micro" zoom-appear="11"/>
+    <osm-tag key="natural" value="schilf_nano" zoom-appear="12"/>
+    <osm-tag key="natural" value="schilf_small" zoom-appear="9"/>
+    <osm-tag key="natural" value="schilf_tiny" zoom-appear="10"/>
+    <osm-tag key="natural" value="schilf" zoom-appear="13"/>
+    <osm-tag key="natural" value="scree_huge" zoom-appear="6"/>
+    <osm-tag key="natural" value="scree_large" zoom-appear="7"/>
+    <osm-tag key="natural" value="scree_medium" zoom-appear="8"/>
+    <osm-tag key="natural" value="scree_micro" zoom-appear="11"/>
+    <osm-tag key="natural" value="scree_nano" zoom-appear="12"/>
+    <osm-tag key="natural" value="scree_small" zoom-appear="9"/>
+    <osm-tag key="natural" value="scree_tiny" zoom-appear="10"/>
+    <osm-tag key="natural" value="scree" zoom-appear="13"/>
+    <osm-tag key="natural" value="scrub_huge" zoom-appear="6"/>
+    <osm-tag key="natural" value="scrub_large" zoom-appear="7"/>
+    <osm-tag key="natural" value="scrub_medium" zoom-appear="8"/>
+    <osm-tag key="natural" value="scrub_micro" zoom-appear="11"/>
+    <osm-tag key="natural" value="scrub_nano" zoom-appear="12"/>
+    <osm-tag key="natural" value="scrub_small" zoom-appear="9"/>
+    <osm-tag key="natural" value="scrub_tiny" zoom-appear="10"/>
+    <osm-tag key="natural" value="scrub" zoom-appear="13"/>
+    <osm-tag key="natural" value="shingle_huge" zoom-appear="6"/>
+    <osm-tag key="natural" value="shingle_large" zoom-appear="7"/>
+    <osm-tag key="natural" value="shingle_medium" zoom-appear="8"/>
+    <osm-tag key="natural" value="shingle_micro" zoom-appear="11"/>
+    <osm-tag key="natural" value="shingle_nano" zoom-appear="12"/>
+    <osm-tag key="natural" value="shingle_small" zoom-appear="9"/>
+    <osm-tag key="natural" value="shingle_tiny" zoom-appear="10"/>
+    <osm-tag key="natural" value="shingle" zoom-appear="13"/>
+    <osm-tag key="natural" value="shoal_huge" zoom-appear="6"/>
+    <osm-tag key="natural" value="shoal_large" zoom-appear="7"/>
+    <osm-tag key="natural" value="shoal_medium" zoom-appear="8"/>
+    <osm-tag key="natural" value="shoal_micro" zoom-appear="11"/>
+    <osm-tag key="natural" value="shoal_nano" zoom-appear="12"/>
+    <osm-tag key="natural" value="shoal_small" zoom-appear="9"/>
+    <osm-tag key="natural" value="shoal_tiny" zoom-appear="10"/>
+    <osm-tag key="natural" value="shoal" zoom-appear="13"/>
+    <osm-tag key="natural" value="sumpfgebiet_huge" zoom-appear="6"/>
+    <osm-tag key="natural" value="sumpfgebiet_large" zoom-appear="7"/>
+    <osm-tag key="natural" value="sumpfgebiet_medium" zoom-appear="8"/>
+    <osm-tag key="natural" value="sumpfgebiet_micro" zoom-appear="11"/>
+    <osm-tag key="natural" value="sumpfgebiet_nano" zoom-appear="12"/>
+    <osm-tag key="natural" value="sumpfgebiet_small" zoom-appear="9"/>
+    <osm-tag key="natural" value="sumpfgebiet_tiny" zoom-appear="10"/>
+    <osm-tag key="natural" value="sumpfgebiet" zoom-appear="13"/>
+    <osm-tag key="natural" value="tree_row" zoom-appear="14"/>
+    <osm-tag key="natural" label-position="true" value="water_huge" zoom-appear="6"/>
+    <osm-tag key="natural" label-position="true" value="water_large" zoom-appear="7"/>
+    <osm-tag key="natural" label-position="true" value="water_medium" zoom-appear="8"/>
+    <osm-tag key="natural" label-position="true" value="water_micro" zoom-appear="11"/>
+    <osm-tag key="natural" label-position="true" value="water_nano" zoom-appear="12"/>
+    <osm-tag key="natural" label-position="true" value="water_small" zoom-appear="9"/>
+    <osm-tag key="natural" label-position="true" value="water_tiny" zoom-appear="10"/>
+    <osm-tag key="natural" label-position="true" value="water" zoom-appear="13"/>
+    <osm-tag key="natural" value="watt_huge" zoom-appear="6"/>
+    <osm-tag key="natural" value="watt_large" zoom-appear="7"/>
+    <osm-tag key="natural" value="watt_medium" zoom-appear="8"/>
+    <osm-tag key="natural" value="watt_micro" zoom-appear="11"/>
+    <osm-tag key="natural" value="watt_nano" zoom-appear="12"/>
+    <osm-tag key="natural" value="watt_small" zoom-appear="9"/>
+    <osm-tag key="natural" value="watt_tiny" zoom-appear="10"/>
+    <osm-tag key="natural" value="watt" zoom-appear="13"/>
+    <osm-tag key="natural" value="wetland_huge" zoom-appear="6"/>
+    <osm-tag key="natural" value="wetland_large" zoom-appear="7"/>
+    <osm-tag key="natural" value="wetland_medium" zoom-appear="8"/>
+    <osm-tag key="natural" value="wetland_micro" zoom-appear="11"/>
+    <osm-tag key="natural" value="wetland_nano" zoom-appear="12"/>
+    <osm-tag key="natural" value="wetland_small" zoom-appear="9"/>
+    <osm-tag key="natural" value="wetland_tiny" zoom-appear="10"/>
+    <osm-tag key="natural" value="wetland" zoom-appear="13"/>
+    <osm-tag key="natural" value="wood_huge" zoom-appear="6"/>
+    <osm-tag key="natural" value="wood_large" zoom-appear="7"/>
+    <osm-tag key="natural" value="wood_medium" zoom-appear="8"/>
+    <osm-tag key="natural" value="wood_micro" zoom-appear="11"/>
+    <osm-tag key="natural" value="wood_nano" zoom-appear="12"/>
+    <osm-tag key="natural" value="wood_small" zoom-appear="9"/>
+    <osm-tag key="natural" value="wood_tiny" zoom-appear="10"/>
+    <osm-tag key="natural" value="wood" zoom-appear="13"/>
+  </ways>
+  <!-- -->
+  <!-- POWER -->
+  <!-- -->
+  <!-- Kraftwerk: power=plant (veraltet: power=generator) -->
+  <!-- Umspannwerk: power=substation (veraltet: power=station; power=sub_station [Umspannstation]) -->
+  <ways>
+    <osm-tag key="power" value="generator" zoom-appear="12"/>
+    <osm-tag key="power" value="line" zoom-appear="13"/>
+    <osm-tag key="power" value="minor_line" zoom-appear="13"/>
+    <osm-tag key="power" value="plant" zoom-appear="12"/>
+    <osm-tag key="power" value="station" zoom-appear="12"/>
+    <osm-tag key="power" value="sub_station" zoom-appear="12"/>
+    <osm-tag key="power" value="substation" zoom-appear="12"/>
+  </ways>
+  <!-- -->
+  <!-- PUBLIC_TRANSPORT -->
+  <!-- -->
+  <ways>
+    <osm-tag key="public_transport" value="platform" zoom-appear="14"/>
+  </ways>
+  <!-- -->
+  <!-- SPORT -->
+  <!-- -->
+  <ways>
+    <osm-tag key="golf" value="driving_range" zoom-appear="14"/>
+    <osm-tag key="golf" value="hole" zoom-appear="14"/>
+    <osm-tag key="golf" value="green" zoom-appear="14"/>
+    <osm-tag key="golf" value="tee" zoom-appear="14"/>
+    <osm-tag key="sport" value="basketball" zoom-appear="14"/>
+    <osm-tag key="sport" value="beachvolleyball" zoom-appear="14"/>
+    <osm-tag key="sport" value="equestrian" zoom-appear="14"/>
+    <osm-tag key="sport" value="model_aerodrome" zoom-appear="14"/>
+    <osm-tag key="sport" value="skateboard" zoom-appear="14"/>
+    <osm-tag key="sport" value="soccer" zoom-appear="14"/>
+    <osm-tag key="sport" value="tennis" zoom-appear="14"/>
+  </ways>
+  <!-- -->
+  <!-- TOURISM -->
+  <!-- -->
+  <ways>
+    <osm-tag key="tourism" value="camp_site" zoom-appear="12"/>
+    <osm-tag key="tourism" value="caravan_site" zoom-appear="12"/>
+    <osm-tag key="tourism" value="museum" zoom-appear="10"/>
+    <osm-tag key="tourism" value="picnic_site" zoom-appear="14"/>
+    <osm-tag key="tourism" value="theme_park" zoom-appear="10"/>
+    <osm-tag key="tourism" value="zoo" zoom-appear="10"/>
+  </ways>
+  <!-- -->
+  <!-- ATTRACTION -->
+  <!-- -->
+  <ways>
+    <osm-tag key="attraction" value="water_slide" zoom-appear="14"/>
+    <osm-tag key="attraction" value="summer_toboggan" zoom-appear="14"/>
+  </ways>
+  <!-- -->
+  <!-- WATERWAY -->
+  <!-- -->
+  <ways>
+    <osm-tag key="waterway" value="canal_tunnel" zoom-appear="10"/>
+    <osm-tag key="waterway" value="canal" zoom-appear="10"/>
+    <osm-tag key="waterway" value="dam" zoom-appear="13"/>
+    <osm-tag key="waterway" value="ditch_tunnel" zoom-appear="13"/>
+    <osm-tag key="waterway" value="ditch" zoom-appear="13"/>
+    <osm-tag key="waterway" value="dock" zoom-appear="12"/>
+    <osm-tag key="waterway" value="drain_tunnel" zoom-appear="13"/>
+    <osm-tag key="waterway" value="drain" zoom-appear="13"/>
+    <osm-tag key="waterway" value="fish_pass" zoom-appear="13"/>
+    <osm-tag key="waterway" value="river_tunnel" zoom-appear="10"/>
+    <osm-tag key="waterway" value="river" zoom-appear="10"/>
+    <osm-tag key="waterway" value="riverbank" zoom-appear="10"/>
+    <osm-tag key="waterway" value="stream_tunnel" zoom-appear="13"/>
+    <osm-tag key="waterway" value="stream" zoom-appear="13"/>
+    <osm-tag key="waterway" value="wadi_tunnel" zoom-appear="13"/>
+    <osm-tag key="waterway" value="wadi" zoom-appear="13"/>
+    <osm-tag key="waterway" value="weir" zoom-appear="13"/>
+    <osm-tag key="waterway" value="tidal_channel" zoom-appear="13"/>
+  </ways>
+  <!-- -->
+  <!-- ZOO -->
+  <!-- -->
+  <ways>
+    <osm-tag key="zoo" value="enclosure" zoom-appear="14"/>
+  </ways>
+  <!-- -->
+  <!-- SPECIAL -->
+  <!-- -->
+  <ways>
+    <osm-tag key="area" value="yes" zoom-appear="12"/>
+    <osm-tag key="amenity" value="marketplace" zoom-appear="12"/>
+  </ways>
+  <!-- -->
+  <!-- HOEHENLINIEN -->
+  <!-- -->
+  <ways>
+    <osm-tag key="contour_ext" value="elevation_major" zoom-appear="10" force-polygon-line="true"/>
+    <osm-tag key="contour_ext" value="elevation_medium" zoom-appear="10" force-polygon-line="true"/>
+    <osm-tag key="contour_ext" value="elevation_minor" zoom-appear="12" force-polygon-line="true"/>
+  </ways>
+  <!-- -->
+  <!-- POLITISCHE + SONSTIGE GRENZEN -->
+  <!-- -->
+  <ways>
+    <osm-tag key="admin_level" value="10" zoom-appear="12" force-polygon-line="true"/>
+    <osm-tag key="admin_level" value="2" zoom-appear="6" force-polygon-line="true"/>
+    <osm-tag key="admin_level" value="3" zoom-appear="6" force-polygon-line="true"/>
+    <osm-tag key="admin_level" value="4" zoom-appear="7" force-polygon-line="true"/>
+    <osm-tag key="admin_level" value="5" zoom-appear="8" force-polygon-line="true"/>
+    <osm-tag key="admin_level" value="6" zoom-appear="9" force-polygon-line="true"/>
+    <osm-tag key="admin_level" value="7" zoom-appear="11" force-polygon-line="true"/>
+    <osm-tag key="admin_level" value="8" zoom-appear="11" force-polygon-line="true"/>
+    <osm-tag key="admin_level" value="9" zoom-appear="12" force-polygon-line="true"/>
+    <osm-tag key="schutzgebiet" value="national_park" zoom-appear="7" force-polygon-line="true"/>
+  </ways>
+  <!-- -->
+  <!-- STRASSEN und WEGE -->
+  <!-- -->
+  <ways>
+    <osm-tag key="highway" value="bergweg1_bridge" zoom-appear="13"/>
+    <osm-tag key="highway" value="bergweg1_tunnel" zoom-appear="13"/>
+    <osm-tag key="highway" value="bergweg1" zoom-appear="13"/>
+    <osm-tag key="highway" value="bergweg2_bridge" zoom-appear="13"/>
+    <osm-tag key="highway" value="bergweg2_tunnel" zoom-appear="13"/>
+    <osm-tag key="highway" value="bergweg2" zoom-appear="13"/>
+    <osm-tag key="highway" value="bergweg3_bridge" zoom-appear="13"/>
+    <osm-tag key="highway" value="bergweg3_tunnel" zoom-appear="13"/>
+    <osm-tag key="highway" value="bergweg3" zoom-appear="13"/>
+    <osm-tag key="highway" value="bergweg4_bridge" zoom-appear="13"/>
+    <osm-tag key="highway" value="bergweg4_tunnel" zoom-appear="13"/>
+    <osm-tag key="highway" value="bergweg4" zoom-appear="13"/>
+    <osm-tag key="highway" value="bergweg5_bridge" zoom-appear="13"/>
+    <osm-tag key="highway" value="bergweg5_tunnel" zoom-appear="13"/>
+    <osm-tag key="highway" value="bergweg5" zoom-appear="13"/>
+    <osm-tag key="highway" value="bergweg6_bridge" zoom-appear="13"/>
+    <osm-tag key="highway" value="bergweg6_tunnel" zoom-appear="13"/>
+    <osm-tag key="highway" value="bergweg6" zoom-appear="13"/>
+    <osm-tag key="highway" value="escape" zoom-appear="10"/>
+    <osm-tag key="highway" value="bus_guideway_bridge" zoom-appear="13"/>
+    <osm-tag key="highway" value="bus_guideway_tunnel" zoom-appear="13"/>
+    <osm-tag key="highway" value="bus_guideway" zoom-appear="13"/>
+    <osm-tag key="highway" value="construction_bridge" zoom-appear="13"/>
+    <osm-tag key="highway" value="construction_tunnel" zoom-appear="13"/>
+    <osm-tag key="highway" value="construction" zoom-appear="13"/>
+    <osm-tag key="highway" value="feldweg023_bridge" zoom-appear="13"/>
+    <osm-tag key="highway" value="feldweg023_tunnel" zoom-appear="13"/>
+    <osm-tag key="highway" value="feldweg023" zoom-appear="13"/>
+    <osm-tag key="highway" value="feldweg1_bridge" zoom-appear="13"/>
+    <osm-tag key="highway" value="feldweg1_tunnel" zoom-appear="13"/>
+    <osm-tag key="highway" value="feldweg1" zoom-appear="13"/>
+    <osm-tag key="highway" value="feldweg45_bridge" zoom-appear="13"/>
+    <osm-tag key="highway" value="feldweg45_tunnel" zoom-appear="13"/>
+    <osm-tag key="highway" value="feldweg45" zoom-appear="13"/>
+    <osm-tag key="highway" value="fussweg_bridge" zoom-appear="13"/>
+    <osm-tag key="highway" value="fussweg_tunnel" zoom-appear="13"/>
+    <osm-tag key="highway" value="fussweg" zoom-appear="13"/>
+    <osm-tag key="highway" value="living_street_bridge" zoom-appear="12"/>
+    <osm-tag key="highway" value="living_street_tunnel" zoom-appear="12"/>
+    <osm-tag key="highway" value="living_street" zoom-appear="12"/>
+    <osm-tag key="highway" value="motorway_bridge" zoom-appear="8"/>
+    <osm-tag key="highway" value="motorway_link_bridge" zoom-appear="8"/>
+    <osm-tag key="highway" value="motorway_link_tunnel" zoom-appear="8"/>
+    <osm-tag key="highway" value="motorway_link" zoom-appear="8"/>
+    <osm-tag key="highway" value="motorway_tunnel" zoom-appear="8"/>
+    <osm-tag key="highway" value="motorway" zoom-appear="8"/>
+    <osm-tag key="highway" value="node_network_bicycle" zoom-appear="10"/>
+    <osm-tag key="highway" value="node_network_canoe" zoom-appear="10"/>
+    <osm-tag key="highway" value="node_network_hiking" zoom-appear="10"/>
+    <osm-tag key="highway" value="node_network_horse" zoom-appear="10"/>
+    <osm-tag key="highway" value="node_network_inline_skates" zoom-appear="10"/>
+    <osm-tag key="highway" value="node_network_motorboat" zoom-appear="10"/>
+    <osm-tag key="highway" value="path_bridge" zoom-appear="13"/>
+    <osm-tag key="highway" value="path_tunnel" zoom-appear="13"/>
+    <osm-tag key="highway" value="path" zoom-appear="13"/>
+    <osm-tag key="highway" value="pedestrian_bridge" zoom-appear="12"/>
+    <osm-tag key="highway" value="pedestrian_tunnel" zoom-appear="12"/>
+    <osm-tag key="highway" value="pedestrian" zoom-appear="12"/>
+    <osm-tag key="highway" value="pistedownhill" zoom-appear="11"/>
+    <osm-tag key="highway" value="pistenordic" zoom-appear="11"/>
+    <osm-tag key="highway" value="pistesled" zoom-appear="11"/>
+    <osm-tag key="highway" value="primary_bridge" zoom-appear="9"/>
+    <osm-tag key="highway" value="primary_link_bridge" zoom-appear="9"/>
+    <osm-tag key="highway" value="primary_link_tunnel" zoom-appear="9"/>
+    <osm-tag key="highway" value="primary_link" zoom-appear="9"/>
+    <osm-tag key="highway" value="primary_tunnel" zoom-appear="9"/>
+    <osm-tag key="highway" value="primary" zoom-appear="9"/>
+    <osm-tag key="highway" value="raceway" zoom-appear="12"/>
+    <osm-tag key="highway" value="radfussweg_bridge" zoom-appear="13"/>
+    <osm-tag key="highway" value="radfussweg_tunnel" zoom-appear="13"/>
+    <osm-tag key="highway" value="radfussweg" zoom-appear="13"/>
+    <osm-tag key="highway" value="radweg_bridge" zoom-appear="13"/>
+    <osm-tag key="highway" value="radweg_tunnel" zoom-appear="13"/>
+    <osm-tag key="highway" value="radweg" zoom-appear="13"/>
+    <osm-tag key="highway" value="reitweg_bridge" zoom-appear="13"/>
+    <osm-tag key="highway" value="reitweg_tunnel" zoom-appear="13"/>
+    <osm-tag key="highway" value="reitweg" zoom-appear="13"/>
+    <osm-tag key="highway" value="residential_bridge" zoom-appear="12"/>
+    <osm-tag key="highway" value="residential_tunnel" zoom-appear="12"/>
+    <osm-tag key="highway" value="residential" zoom-appear="12"/>
+    <osm-tag key="highway" value="rest_area" zoom-appear="13"/>
+    <osm-tag key="highway" value="road_bridge" zoom-appear="12"/>
+    <osm-tag key="highway" value="road_tunnel" zoom-appear="12"/>
+    <osm-tag key="highway" value="road" zoom-appear="12"/>
+    <osm-tag key="highway" value="routebicycle" zoom-appear="10"/>
+    <osm-tag key="highway" value="routecanoe" zoom-appear="10"/>
+    <osm-tag key="highway" value="routehiking" zoom-appear="10"/>
+    <osm-tag key="highway" value="routehorse" zoom-appear="10"/>
+    <osm-tag key="highway" value="routeinline" zoom-appear="10"/>
+    <osm-tag key="highway" value="routemotorboat" zoom-appear="10"/>
+    <osm-tag key="highway" value="routemtb" zoom-appear="10"/>
+    <osm-tag key="highway" value="secondary_bridge" zoom-appear="10"/>
+    <osm-tag key="highway" value="secondary_link_bridge" zoom-appear="10"/>
+    <osm-tag key="highway" value="secondary_link_tunnel" zoom-appear="10"/>
+    <osm-tag key="highway" value="secondary_link" zoom-appear="10"/>
+    <osm-tag key="highway" value="secondary_tunnel" zoom-appear="10"/>
+    <osm-tag key="highway" value="secondary" zoom-appear="10"/>
+    <osm-tag key="highway" value="service_bridge" zoom-appear="12"/>
+    <osm-tag key="highway" value="service_small_bridge" zoom-appear="12"/>
+    <osm-tag key="highway" value="service_small_tunnel" zoom-appear="12"/>
+    <osm-tag key="highway" value="service_small" zoom-appear="12"/>
+    <osm-tag key="highway" value="service_tunnel" zoom-appear="12"/>
+    <osm-tag key="highway" value="service" zoom-appear="12"/>
+    <osm-tag key="highway" value="services" zoom-appear="13"/>
+    <osm-tag key="highway" value="steps_bridge" zoom-appear="13"/>
+    <osm-tag key="highway" value="steps_tunnel" zoom-appear="13"/>
+    <osm-tag key="highway" value="steps" zoom-appear="13"/>
+    <osm-tag key="highway" value="tertiary_bridge" zoom-appear="11"/>
+    <osm-tag key="highway" value="tertiary_link_bridge" zoom-appear="11"/>
+    <osm-tag key="highway" value="tertiary_link_tunnel" zoom-appear="11"/>
+    <osm-tag key="highway" value="tertiary_link" zoom-appear="11"/>
+    <osm-tag key="highway" value="tertiary_tunnel" zoom-appear="11"/>
+    <osm-tag key="highway" value="tertiary" zoom-appear="11"/>
+    <osm-tag key="highway" value="trunk_bridge" zoom-appear="8"/>
+    <osm-tag key="highway" value="trunk_link_bridge" zoom-appear="8"/>
+    <osm-tag key="highway" value="trunk_link_tunnel" zoom-appear="8"/>
+    <osm-tag key="highway" value="trunk_link" zoom-appear="8"/>
+    <osm-tag key="highway" value="trunk_tunnel" zoom-appear="8"/>
+    <osm-tag key="highway" value="trunk" zoom-appear="8"/>
+    <osm-tag key="highway" value="unclassified_bridge" zoom-appear="12"/>
+    <osm-tag key="highway" value="unclassified_tunnel" zoom-appear="12"/>
+    <osm-tag key="highway" value="unclassified" zoom-appear="12"/>
+    <osm-tag key="highway" value="via_ferrata_bridge" zoom-appear="13"/>
+    <osm-tag key="highway" value="via_ferrata_tunnel" zoom-appear="13"/>
+    <osm-tag key="highway" value="via_ferrata" zoom-appear="13"/>
+  </ways>
+  <!-- -->
+  <!-- EISENBAHNEN -->
+  <!-- -->
+  <ways>
+    <osm-tag key="railway" value="construction_bridge" zoom-appear="10"/>
+    <osm-tag key="railway" value="construction_tunnel" zoom-appear="10"/>
+    <osm-tag key="railway" value="construction" zoom-appear="10"/>
+    <osm-tag key="railway" value="disused_bridge" zoom-appear="10"/>
+    <osm-tag key="railway" value="disused_tunnel" zoom-appear="10"/>
+    <osm-tag key="railway" value="disused" zoom-appear="10"/>
+    <osm-tag key="railway" value="light_rail_bridge" zoom-appear="10"/>
+    <osm-tag key="railway" value="light_rail_service_bridge" zoom-appear="12"/>
+    <osm-tag key="railway" value="light_rail_service_tunnel" zoom-appear="12"/>
+    <osm-tag key="railway" value="light_rail_service" zoom-appear="12"/>
+    <osm-tag key="railway" value="light_rail_tunnel" zoom-appear="10"/>
+    <osm-tag key="railway" value="light_rail" zoom-appear="10"/>
+    <osm-tag key="railway" value="miniature_bridge" zoom-appear="14"/>
+    <osm-tag key="railway" value="miniature_tunnel" zoom-appear="14"/>
+    <osm-tag key="railway" value="miniature" zoom-appear="14"/>
+    <osm-tag key="railway" value="monorail_bridge" zoom-appear="10"/>
+    <osm-tag key="railway" value="monorail_tunnel" zoom-appear="10"/>
+    <osm-tag key="railway" value="monorail" zoom-appear="10"/>
+    <osm-tag key="railway" value="narrow_gauge_bridge" zoom-appear="10"/>
+    <osm-tag key="railway" value="narrow_gauge_tunnel" zoom-appear="10"/>
+    <osm-tag key="railway" value="narrow_gauge" zoom-appear="10"/>
+    <osm-tag key="railway" value="platform" zoom-appear="14"/>
+    <osm-tag key="railway" value="rail_bridge" zoom-appear="8"/>
+    <osm-tag key="railway" value="rail_service_bridge" zoom-appear="12"/>
+    <osm-tag key="railway" value="rail_service_tunnel" zoom-appear="12"/>
+    <osm-tag key="railway" value="rail_service" zoom-appear="12"/>
+    <osm-tag key="railway" value="rail_tunnel" zoom-appear="8"/>
+    <osm-tag key="railway" value="rail" zoom-appear="8"/>
+    <osm-tag key="railway" value="subway_bridge" zoom-appear="12"/>
+    <osm-tag key="railway" value="subway_service_bridge" zoom-appear="12"/>
+    <osm-tag key="railway" value="subway_service_tunnel" zoom-appear="12"/>
+    <osm-tag key="railway" value="subway_service" zoom-appear="12"/>
+    <osm-tag key="railway" value="subway_tunnel" zoom-appear="12"/>
+    <osm-tag key="railway" value="subway" zoom-appear="12"/>
+    <osm-tag key="railway" value="tram_bridge" zoom-appear="14"/>
+    <osm-tag key="railway" value="tram_tunnel" zoom-appear="14"/>
+    <osm-tag key="railway" value="tram" zoom-appear="14"/>
+  </ways>
+  <!-- -->
+  <!-- KUENSTLICHE OBJEKTE -->
+  <!-- -->
+  <ways>
+    <osm-tag key="man_made" value="breakwater" zoom-appear="12"/>
+    <osm-tag key="man_made" value="bridge" zoom-appear="14"/>
+    <osm-tag key="man_made" value="cutline" zoom-appear="13"/>
+    <osm-tag key="man_made" value="dyke" zoom-appear="14"/>
+    <osm-tag key="man_made" value="embankment" zoom-appear="14"/>
+    <osm-tag key="man_made" value="groyne" zoom-appear="12"/>
+    <osm-tag key="man_made" value="pier" zoom-appear="14"/>
+    <osm-tag key="man_made" value="wastewater_plant" zoom-appear="12"/>
+    <osm-tag key="man_made" value="water_works" zoom-appear="12"/>
+    <osm-tag key="man_made" value="works" zoom-appear="12"/>
+  </ways>
+  <!-- -->
+  <!-- ROUTEN -->
+  <!-- -->
+  <ways>
+    <osm-tag key="route" value="ferry" zoom-appear="7"/>
+  </ways>
+  <!-- -->
+  <!-- BARRIEREN -->
+  <!-- -->
+  <ways>
+    <osm-tag key="barrier" value="chain" zoom-appear="14"/>
+    <osm-tag key="barrier" value="city_wall" zoom-appear="14"/>
+    <osm-tag key="barrier" value="fence" zoom-appear="14"/>
+    <osm-tag key="barrier" value="hedge" zoom-appear="14"/>
+    <osm-tag key="barrier" value="hedge_bank" zoom-appear="14"/>
+    <osm-tag key="barrier" value="retaining_wall" zoom-appear="14"/>
+    <osm-tag key="barrier" value="wall" zoom-appear="14"/>
+  </ways>
+  <!-- -->
+  <!-- SEILBAHNEN -->
+  <!-- -->
+  <ways>
+    <osm-tag key="aerialway" value="cable_car" zoom-appear="13"/>
+    <osm-tag key="aerialway" value="chair_lift" zoom-appear="13"/>
+    <osm-tag key="aerialway" value="drag_lift" zoom-appear="13"/>
+    <osm-tag key="aerialway" value="gondola" zoom-appear="13"/>
+    <osm-tag key="aerialway" value="goods" zoom-appear="13"/>
+    <osm-tag key="aerialway" value="j-bar" zoom-appear="13"/>
+    <osm-tag key="aerialway" value="mixed_lift" zoom-appear="13"/>
+    <osm-tag key="aerialway" value="platter" zoom-appear="13"/>
+    <osm-tag key="aerialway" value="rope_tow" zoom-appear="13"/>
+    <osm-tag key="aerialway" value="t-bar" zoom-appear="13"/>
+  </ways>
+  <!-- -->
+  <!-- WASSER (speziell) -->
+  <!-- -->
+  <ways>
+    <osm-tag key="water" value="basin" zoom-appear="12"/>
+  </ways>
+  <!-- -->
+  <!-- ANDERE -->
+  <!-- -->
+  <ways>
+    <osm-tag key="fenced" value="yes" equivalent-values="1,true" zoom-appear="14"/>
+    <osm-tag key="lock" value="yes" equivalent-values="1,true" zoom-appear="14"/>
+  </ways>
+  <!-- -->
+  <!-- NOT TO RENDER -->
+  <!-- -->
+  <ways>
+    <osm-tag key="access" value="access_agricultural;forestry" renderable="false"/>
+    <osm-tag key="access" value="access_agricultural" renderable="false"/>
+    <osm-tag key="access" value="access_customers" renderable="false"/>
+    <osm-tag key="access" value="access_delivery" renderable="false"/>
+    <osm-tag key="access" value="access_destination" renderable="false"/>
+    <osm-tag key="access" value="access_forestry" renderable="false"/>
+    <osm-tag key="access" value="access_no" renderable="false"/>
+    <osm-tag key="access" value="access_private" renderable="false"/>
+    <osm-tag key="area_size" value="small" renderable="false"/>
+    <osm-tag key="area_size" value="large" renderable="false"/>
+    <osm-tag key="basin" value="detention" renderable="false"/>
+    <osm-tag key="basin" value="infiltration" renderable="false"/>
+    <osm-tag key="basin" value="retention" renderable="false"/>
+    <osm-tag key="bicycle" value="bicycle_designated" renderable="false"/>
+    <osm-tag key="bicycle" value="bicycle_destination" renderable="false"/>
+    <osm-tag key="bicycle" value="bicycle_no" renderable="false"/>
+    <osm-tag key="bicycle" value="bicycle_official" renderable="false"/>
+    <osm-tag key="bicycle" value="bicycle_permissive" renderable="false"/>
+    <osm-tag key="bicycle" value="bicycle_private" renderable="false"/>
+    <osm-tag key="bicycle" value="bicycle_yes" renderable="false"/>
+    <osm-tag key="cycleway_lane" value="cycleway_lane_both" renderable="false"/>
+    <osm-tag key="cycleway_lane" value="cycleway_lane_left" renderable="false"/>
+    <osm-tag key="cycleway_lane" value="cycleway_lane_right" renderable="false"/>
+    <osm-tag key="foot" value="foot_designated" renderable="false"/>
+    <osm-tag key="foot" value="foot_destination" renderable="false"/>
+    <osm-tag key="foot" value="foot_no" renderable="false"/>
+    <osm-tag key="foot" value="foot_official" renderable="false"/>
+    <osm-tag key="foot" value="foot_permissive" renderable="false"/>
+    <osm-tag key="foot" value="foot_private" renderable="false"/>
+    <osm-tag key="foot" value="foot_yes" renderable="false"/>
+    <osm-tag key="ford" value="ford_yes" equivalent-values="ford_stepping_stones" renderable="false"/>
+    <osm-tag key="intermittent" value="yes" renderable="false"/>
+    <osm-tag key="leaf_type" value="broadleaved" renderable="false"/>
+    <osm-tag key="leaf_type" value="mixed" renderable="false"/>
+    <osm-tag key="leaf_type" value="needleleaved" renderable="false"/>
+    <osm-tag key="military" value="airfield" renderable="false"/>
+    <osm-tag key="military" value="barracks" renderable="false"/>
+    <osm-tag key="military" value="danger_area" renderable="false"/>
+    <osm-tag key="military" value="naval_base" renderable="false"/>
+    <osm-tag key="military" value="range" renderable="false"/>
+    <osm-tag key="motor_vehicle" value="motor_vehicle_agricultural;forestry" renderable="false"/>
+    <osm-tag key="motor_vehicle" value="motor_vehicle_agricultural" renderable="false"/>
+    <osm-tag key="motor_vehicle" value="motor_vehicle_customers" renderable="false"/>
+    <osm-tag key="motor_vehicle" value="motor_vehicle_delivery" renderable="false"/>
+    <osm-tag key="motor_vehicle" value="motor_vehicle_destination" renderable="false"/>
+    <osm-tag key="motor_vehicle" value="motor_vehicle_forestry" renderable="false"/>
+    <osm-tag key="motor_vehicle" value="motor_vehicle_no" renderable="false"/>
+    <osm-tag key="motor_vehicle" value="motor_vehicle_private" renderable="false"/>
+    <osm-tag key="motor_vehicle" value="motor_vehicle_yes" renderable="false"/>
+    <osm-tag key="motorcar" value="motorcar_agricultural;forestry" renderable="false"/>
+    <osm-tag key="motorcar" value="motorcar_agricultural" renderable="false"/>
+    <osm-tag key="motorcar" value="motorcar_customers" renderable="false"/>
+    <osm-tag key="motorcar" value="motorcar_delivery" renderable="false"/>
+    <osm-tag key="motorcar" value="motorcar_destination" renderable="false"/>
+    <osm-tag key="motorcar" value="motorcar_forestry" renderable="false"/>
+    <osm-tag key="motorcar" value="motorcar_no" renderable="false"/>
+    <osm-tag key="motorcar" value="motorcar_private" renderable="false"/>
+    <osm-tag key="motorcar" value="motorcar_yes" renderable="false"/>
+    <osm-tag key="mtb:scale" value="mtbs_0" renderable="false"/>
+    <osm-tag key="mtb:scale" value="mtbs_1" renderable="false"/>
+    <osm-tag key="mtb:scale" value="mtbs_2" renderable="false"/>
+    <osm-tag key="mtb:scale" value="mtbs_3" renderable="false"/>
+    <osm-tag key="mtb:scale" value="mtbs_4" renderable="false"/>
+    <osm-tag key="mtb:scale" value="mtbs_5" renderable="false"/>
+    <osm-tag key="mtb:scale" value="mtbs_6" renderable="false"/>
+    <osm-tag key="mtb:scale:uphill" value="mtbu_0" renderable="false"/>
+    <osm-tag key="mtb:scale:uphill" value="mtbu_1" renderable="false"/>
+    <osm-tag key="mtb:scale:uphill" value="mtbu_2" renderable="false"/>
+    <osm-tag key="mtb:scale:uphill" value="mtbu_3" renderable="false"/>
+    <osm-tag key="mtb:scale:uphill" value="mtbu_4" renderable="false"/>
+    <osm-tag key="mtb:scale:uphill" value="mtbu_5" renderable="false"/>
+    <osm-tag key="oneway" value="no" equivalent-values="0,false" renderable="false"/>
+    <osm-tag key="oneway" value="yes" equivalent-values="-1,1,true" renderable="false"/>
+    <osm-tag key="religion" value="christian" renderable="false"/>
+    <osm-tag key="religion" value="jewish" renderable="false"/>
+    <osm-tag key="religion" value="muslim" renderable="false"/>
+    <osm-tag key="routenetwork" value="icn" renderable="false"/>
+    <osm-tag key="routenetwork" value="ihn" renderable="false"/>
+    <osm-tag key="routenetwork" value="iwn" renderable="false"/>
+    <osm-tag key="routenetwork" value="lcn" renderable="false"/>
+    <osm-tag key="routenetwork" value="lhn" renderable="false"/>
+    <osm-tag key="routenetwork" value="lin" renderable="false"/>
+    <osm-tag key="routenetwork" value="lmn" renderable="false"/>
+    <osm-tag key="routenetwork" value="lpn" renderable="false"/>
+    <osm-tag key="routenetwork" value="lwn" renderable="false"/>
+    <osm-tag key="routenetwork" value="mtb" renderable="false"/>
+    <osm-tag key="routenetwork" value="ncn" renderable="false"/>
+    <osm-tag key="routenetwork" value="nhn" renderable="false"/>
+    <osm-tag key="routenetwork" value="nin" renderable="false"/>
+    <osm-tag key="routenetwork" value="nmn" renderable="false"/>
+    <osm-tag key="routenetwork" value="npn" renderable="false"/>
+    <osm-tag key="routenetwork" value="nwn" renderable="false"/>
+    <osm-tag key="routenetwork" value="rcn" renderable="false"/>
+    <osm-tag key="routenetwork" value="rhn" renderable="false"/>
+    <osm-tag key="routenetwork" value="rin" renderable="false"/>
+    <osm-tag key="routenetwork" value="rmn" renderable="false"/>
+    <osm-tag key="routenetwork" value="rpn" renderable="false"/>
+    <osm-tag key="routenetwork" value="rwn" renderable="false"/>
+    <osm-tag key="routenetwork" value="advanced" renderable="false"/>
+    <osm-tag key="routenetwork" value="intermediate" renderable="false"/>
+    <osm-tag key="routenetwork" value="easy" renderable="false"/>
+    <osm-tag key="routenetwork" value="novice" renderable="false"/>
+    <osm-tag key="routesize" value="large" renderable="false"/>
+    <osm-tag key="routesize" value="medium" renderable="false"/>
+    <osm-tag key="routesize" value="small" renderable="false"/>
+    <osm-tag key="surface" value="surface_gravel" renderable="false"/>
+    <osm-tag key="surface" value="surface_sand" renderable="false"/>
+    <osm-tag key="surface" value="surface_grass" renderable="false"/>
+    <osm-tag key="surface" value="surface_asphalt" renderable="false"/>
+    <osm-tag key="trail_visibility" value="trail_visibility_excellent" renderable="false"/>
+    <osm-tag key="trail_visibility" value="trail_visibility_good" renderable="false"/>
+    <osm-tag key="trail_visibility" value="trail_visibility_intermediate" renderable="false"/>
+    <osm-tag key="trail_visibility" value="trail_visibility_bad" renderable="false"/>
+    <osm-tag key="trail_visibility" value="trail_visibility_horrible" renderable="false"/>
+    <osm-tag key="trail_visibility" value="trail_visibility_no" renderable="false"/>
+    <osm-tag key="vehicle" value="vehicle_agricultural;forestry" renderable="false"/>
+    <osm-tag key="vehicle" value="vehicle_agricultural" renderable="false"/>
+    <osm-tag key="vehicle" value="vehicle_customers" renderable="false"/>
+    <osm-tag key="vehicle" value="vehicle_delivery" renderable="false"/>
+    <osm-tag key="vehicle" value="vehicle_destination" renderable="false"/>
+    <osm-tag key="vehicle" value="vehicle_forestry" renderable="false"/>
+    <osm-tag key="vehicle" value="vehicle_no" renderable="false"/>
+    <osm-tag key="vehicle" value="vehicle_private" renderable="false"/>
+    <osm-tag key="vehicle" value="vehicle_yes" renderable="false"/>
+    <osm-tag key="winter_room" value="yes" renderable="false"/>
+  </ways>
+  <pois>
+    <osm-tag key="area_size" value="small" renderable="false"/>
+    <osm-tag key="area_size" value="large" renderable="false"/>
+    <osm-tag key="religion" value="christian" renderable="false"/>
+    <osm-tag key="religion" value="jewish" renderable="false"/>
+    <osm-tag key="religion" value="muslim" renderable="false"/>
+    <osm-tag key="winter_room" value="yes" renderable="false"/>
+    <osm-tag key="car" value="car_yes" renderable="false"/>
+    <osm-tag key="bicycle" value="bicycle_yes" renderable="false"/>
+    <osm-tag key="fzk_turning" value="residential" renderable="false"/>
+    <osm-tag key="fzk_turning" value="living_street" renderable="false"/>
+    <osm-tag key="fzk_turning" value="unclassified" renderable="false"/>
+    <osm-tag key="fzk_turning" value="service" renderable="false"/>
+    <osm-tag key="fzk_turning" value="track" renderable="false"/>
+    <osm-tag key="fzk_turning" value="not_set" renderable="false"/>
+ </pois>
+</tag-mapping>

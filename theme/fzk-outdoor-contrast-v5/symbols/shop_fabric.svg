@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580" height="580" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <title>fabric</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>fabric</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path d="m87 72.5v43.5h-29l-14.5 16.198v70.802l-14.5 14.5v58l13.731 14.5h44.269v29c-29 0-58 28.999-58 60.754v84.246c0 29 29 58 58 58h377c29 0 58-14.5 58-43.5s-29-43.5-58-43.5h-18.5c11.524-8.5542 18.364-27.115 18.5-43.5 0-13.601-3.2385-29.504-14.5-43.5h14.5l14.5-14.5v-43.5h29l14.5-14.5v-72.5h14.5l14.5-14.5v-58l-14.5-14.5h-58v-43.5l-14.5-14.5h-58l-14.5 14.5v43.5h-14.5v-43.5l-14.5-14.5h-58l-14.5 14.5v43.5h-14.5v-43.5l-14.5-14.5h-58l-14.5 14.5v43.5h-14.5v-43.5l-14.5-14.5h-58zm87 217.5h14.5v29h-14.5zm101.5 0h14.5v29h-14.5zm101.5 0h14.5v29h-14.5z" fill="#fff" opacity=".8"/>
+ <g fill="#1e1ef0">
+  <path d="m101.5 348c-29 0-43.5 14.5-43.5 43.5v58c0 29 14.5 43.5 43.5 43.5h375.41c21.75 0 21.75-29 0-29h-375.41c-8.059 0-14.5-6.7552-14.5-14.5v-58c0-8.0682 7.5293-14.5 14.5-14.5h290c19.388 0 19.388 29 0 29h-261v29h261c26.801 0 43.5-16.7 43.5-43.5 0-26.016-17.443-43.5-45.5-43.5z"/>
+  <path d="m420.5 290v29h29v-29z"/>
+  <path d="m217.5 290v29h29v-29z"/>
+  <path d="m377 232v29h116v-29h-116z"/>
+  <path d="m174 232v29h116v-29h-116z"/>
+  <path d="m58 232v29h29v-29z"/>
+  <path d="m319 203v116h29v-116z"/>
+  <path d="m116 203v116h29v-116z"/>
+  <path d="m478.5 145v29h43.5v-29z"/>
+  <path d="m275.5 145v29h116v-29h-116z"/>
+  <path d="m72.5 145v29h116v-29h-116z"/>
+  <path d="m420.5 87v116h29v-116z"/>
+  <path d="m319 87v29h29v-29z"/>
+  <path d="m217.5 87v116h29v-116z"/>
+  <path d="m116 87v29h29v-29z"/>
+ </g>
+</svg>

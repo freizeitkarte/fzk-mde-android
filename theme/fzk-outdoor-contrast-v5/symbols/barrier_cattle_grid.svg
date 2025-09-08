@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580" height="580" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <title>cattle_grid</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>cattle_grid</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path d="m58 130.5v362.5h464v-362.5z" fill="#fff" fill-rule="evenodd" opacity=".8"/>
+ <g fill="#c00" fill-rule="evenodd">
+  <path d="m87 159.5h406v43.5h-406z"/>
+  <path d="m87 246.5h406v43.5h-406z"/>
+  <path d="m87 333.5h406v43.5h-406z"/>
+  <path d="m87 420.5h406v43.5h-406z"/>
+ </g>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="580" width="580" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <title>picknick</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>picknick</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path opacity=".8" d="m263.04 7.2856c-47.07 22.805-84.83 64.9-101.95 114.42-21.98 56.96-24.49 123.71 3.1 179.24 8.77 17.1 24.89 33.79 38.81 47.05h-87v-174h-116v348h580v-348h-116v174h-69.318c38.605-41.568 51.742-105.38 34.103-159.18-8.2393-28.557-24.487-53.912-34.648-81.669-4.7661-16.588-3.6343-34.516-9.2091-50.792-10.249-14.961-33.333-15.443-46.443-4.084-10.53 5.8085-19.885 13.634-27.816 22.65-0.24958-13.281 3.3281-26.102 8.3784-38.334-0.04-36.6-29.04-42.621-56-29.314z" fill-rule="evenodd" fill="#fff"/>
+ <g fill="#734a08">
+  <path d="m29 203v290h522v-290h-53.857v245h-414.29v-245z" fill-rule="evenodd"/>
+  <path d="m124.29 377h331.43v29h-331.43z" fill-rule="evenodd"/>
+  <path d="m290 29c-82.959 28.801-116 116-116 185.6s40.482 122.03 92.8 139.2c-46.4-75.599-46.4-139.2 23.2-185.6-11.714 31.385 0 92.8 23.2 116 10.01-9.2976 23.2-33.054 23.2-46.4 46.4 46.4 13.059 84.292 0 116 25.25-12.97 69.6-46.4 69.6-116s-46.4-92.8-46.4-162.4c-32.1 13.902-46.4 46.4-46.4 69.6-22.09-12.91-46.4-63.883-23.2-116z"/>
+ </g>
+</svg>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="580" width="580" version="1.0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <title>sac_scale_t4</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>sac_scale_t4</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g>
+  <path d="m0 145c0-29 29-58 58-58h464c29 0 58 29 58 58v290c0 29-29 58-58 58h-464c-29 0-58-29-58-58z" fill="#ebebeb"/>
+  <path d="m183.58 402.69v-189.22h-67.58v-38.529h180.99v38.529h-67.425v189.22h-45.986z"/>
+  <path d="m402.17 402.69v-45.83h-93.214v-38.218l98.8-144.64h36.664v144.48h28.275v38.373h-28.275v45.83h-42.257zm0-84.204v-77.834l-52.355 77.834h52.355z"/>
+ </g>
+</svg>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="580" width="580" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <title>guidepost</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>guidepost</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g>
+  <path opacity=".8" d="m188.5 0c-14.5 0-20.65 8.2711-20.94 14.5l-37.06 1.5c-29 0-58 13-58 64v79.5c0 43.5 29 58 58 58l29 3.5v315.5c0 43.5 14.5 43.5 58 43.5h29c43.5 0 58 0 58-43.5v-312.5l86.262 4.7323c26.038 1.4284 39.723-3.0954 54.768-19.664l45.01-49.57c20.247-22.296 21.54-44.5 1.7359-67.86l-52.31-61.7c-12.52-14.766-29.41-19.234-48.47-18.814l-97.18 2.143c-1.07-4.4887-4.32-13.269-18.82-13.269z" fill="#fff"/>
+  <path d="m261 43.5c0-6.911-6.49-14.5-14.5-14.5h-29c-8.87 0-14.5 6.37-14.5 14.5v493c0 9.0998 7.0953 14.5 14.5 14.5h29c6.8683 0 14.5-7.0093 14.5-14.5z" fill="#734a08"/>
+  <path d="m399.9 54.025-269.33 5.6289c-7.7573 0.16282-13.999 6.4277-14.133 14.186l-1.4805 85.84c-0.13329 7.7784 5.9203 14.264 13.689 14.666l271.92 14.072c4.193 0.21679 8.2727-1.4024 11.176-4.4356l46.244-48.314c5.0653-5.293 5.3634-13.541 0.69336-19.186l-47.35-57.224c-2.8104-3.3964-7.0184-5.3227-11.426-5.2305z" fill-rule="evenodd" fill="#734a08"/>
+ </g>
+</svg>

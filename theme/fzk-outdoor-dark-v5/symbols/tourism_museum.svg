@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="580" width="580" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <title>museum</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>museum</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path opacity=".8" d="m290 10.5-203 87v358l-58 58v66.5h522v-66.5l-58-58v-358zm-74.5 163.5h149l-74.5 87zm-12.5 182.5 87 93 87-93v107.5h-174z" fill-rule="evenodd" fill="#fff"/>
+ <g fill="#734a08">
+  <path d="m116 464h58v-188.5l116 130.5 116-130.5v188.5h58v-290h-58l-116 131.5-116-131.5h-58z" fill-rule="evenodd"/>
+  <path d="m87 493-29 29v29h464v-29l-29-29z"/>
+  <path d="m116 145v-29l174-72.5 174 72.5v29z" fill-rule="evenodd"/>
+ </g>
+</svg>

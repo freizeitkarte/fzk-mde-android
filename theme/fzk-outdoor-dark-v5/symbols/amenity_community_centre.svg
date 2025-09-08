@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="580" width="580" version="1.0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <title>community_centre</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>community_centre</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path opacity=".8" d="m203 58c-58 0-87 58-58 116h-87v87h87v49l-58 121 10 33h69l37-70 37 70h100l37-70 37 70h71l8-33-58-121v-49h87v-87h-87c29-58 0-116-58-116s-87 58-58 116h-58c29-58 0-116-58-116zm58 203h58v50l-29 66-29-66v-50z" fill-rule="evenodd" fill="#fff"/>
+ <path d="m203 87c-23.6 0-42.732 19.476-42.732 43.5s19.133 43.5 42.732 43.5c23.6 0 42.732-19.476 42.732-43.5 0-24.02-19.13-43.5-42.73-43.5zm174 0c-23.6 0-42.732 19.476-42.732 43.5s19.133 43.5 42.732 43.5c23.6 0 42.732-19.476 42.732-43.5 0-24.02-19.13-43.5-42.73-43.5zm-290 116v29h87v87l-58 116h29l58-116 58 116h29l-58-116v-87h116v87l-58 116h29l58-116 58 116h29l-58-116v-87h87v-29z" fill-rule="evenodd" fill="#734a08"/>
+</svg>

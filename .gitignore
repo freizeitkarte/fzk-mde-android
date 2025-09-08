@@ -1,0 +1,5 @@
+land-polygons-split-4326/
+install/
+work/
+tmp/
+tools/ogr2osm/geom.pyc

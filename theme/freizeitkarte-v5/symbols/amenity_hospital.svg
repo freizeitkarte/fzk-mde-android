@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 580 580" width="580" height="580">
+   <g>
+      <path opacity="0.8" d=" M 220 195 L 360 195 L 360 315 L 480 315 L 480 455 L 360 455 L 360 575 L 220 575 L 220 455 L 100 455 L 100 315 L 220 315 L 220 195 Z " fill-rule="evenodd" fill="#f1eee9" />
+      <path d=" M 240 215 L 340 215 L 340 335 L 460 335 L 460 435 L 340 435 L 340 555 L 240 555 L 240 435 L 120 435 L 120 335 L 240 335 L 240 215 Z " fill-rule="evenodd" fill="#ca000f" />
+      <rect x="-1.832" y="80.956" width="336.698" height="69.635" transform="matrix(0.874,-0.486,0.464,0.886,-32.776,94.133)" fill="#4c4c4c" />
+      <rect x="257.874" y="77.244" width="321.447" height="66.231" transform="matrix(0.869,0.494,-0.516,0.857,111.598,-191.098)" fill="#4c4c4c"/>
+   </g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="580" width="580" version="1.0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <title>artwork</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>artwork</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <!-- <path opacity=".8" d="m276 58c-60.91 0-91.38 73.58-58.87 116-26.94 6.41-43.13 29-43.13 58 0 45.498 43.649 95.649 49.676 145l-0.14258 87h-62.533l-45 45v71h319v-71l-45-45h-62.42l0.39205-87c10.98-50.73 49.03-99.89 49.03-145 0-29-19.46-51.38-42.71-58 33.32-45.02 2.62-116-58.29-116z" fill="#fff"/> -->
+ <path d="m275.5 87c-24.02 0-43.5 19.48-43.5 43.5s19.48 43.5 43.5 43.5 43.5-19.48 43.5-43.5-19.48-43.5-43.5-43.5zm-43.5 116c-15.29 0-29 13.93-29 29 0 29 50.75 116.47 50.75 145v87h43.5v-87c0-27.97 50.75-116 50.75-145 0-16.05-13.01-29-29-29z" fill="#724914"/>
+ <path d="m174 493-29 29v29h261v-29l-29-29z" fill="#724914"/>
+</svg>

@@ -1,0 +1,1 @@
+perl perltidy -pro=perltidy.cfg mta.pl

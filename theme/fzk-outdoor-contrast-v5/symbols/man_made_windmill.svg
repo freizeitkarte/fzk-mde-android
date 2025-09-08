@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="580" width="580" version="1.0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <title>windmill</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>windmill</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path opacity=".8" d="m300 122h-18.8l-84.9-112.2c-9.54-13.185-46.35-11.81-55.8-3l-52.1 50.9c-15.596 20.868-1.406 50.11 15.6 62.2l106.2 91.1-115.1 99.3c-17.653 14.611-14.187 40.765-3.3 57.2l52.8 49.1c13.934 9.3974 27.353 11.667 41.8 4.4l-16.4 135h240.25l-16.75-136c14.197 9.3097 33.774 6.7788 46.5-4l50.5-48.5c21.075-27.06 6.7401-54.425-17.7-70.5l-100.8-87 124.5-109.5c9.3-15.644 5.2-36.075-6.5-49.4l-45-40.4c-15.81-15.399-49.69-13.976-66.6 4.9z" fill-rule="evenodd" fill="#fff"/>
+ <path d="m203.67 526.08 43.17-351.27 43.16-23.81 43.16 23.81 43.17 351.27z" fill-rule="evenodd" fill="#c4aa9c"/>
+ <g stroke-linejoin="round" fill-rule="evenodd" stroke="#672400" stroke-linecap="round" stroke-width="19.677" fill="#672400">
+  <path d="m119.88 80.358 48.56-45.443 117.68 160.44-14.99 14.5z"/>
+  <path d="m462.08 80.358-48.56-45.443-117.68 160.44l14.99 14.502z"/>
+  <path d="m462.08 340.38-48.56 45.44-117.68-160.44 14.99-14.5z"/>
+  <path d="m119.88 340.38 48.56 45.44 117.68-160.44-14.99-14.5z"/>
+ </g>
+</svg>

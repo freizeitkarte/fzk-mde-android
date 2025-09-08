@@ -1,0 +1,6 @@
+# Modifikation für Küstenlinie Norwegen
+
+Original:
+static int64_t global_maxrefs= 100000;
+Modification:
+static int64_t global_maxrefs= 150000;

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580" height="580" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <title>stone</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>stone</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path d="m145 145v290h290v-290h-290zm87 87h116v116h-116v-116z" fill="#fff" fill-rule="evenodd" opacity=".8"/>
+ <path d="m174 174v232h232v-232h-232zm29 29h174v174h-174v-174z" fill="#734a08" fill-rule="evenodd"/>
+</svg>

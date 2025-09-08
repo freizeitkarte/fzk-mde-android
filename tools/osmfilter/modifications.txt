@@ -1,0 +1,6 @@
+# Modifikation für Küstenlinie Norwegen
+
+Original:
+  #define oo__refM 100000
+Modification:
+  #define oo__refM 150000

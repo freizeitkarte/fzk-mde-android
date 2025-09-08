@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580" height="580" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <title>kissing_gate</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>kissing_gate</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path d="m87 217.5c-40.041 0-72.5 32.459-72.5 72.5 0 40.041 32.459 72.5 72.5 72.5 18.437 0 35.255-6.8936 48.049-18.229h281.45v-108.54h-281.45c-12.793-11.335-29.612-18.229-48.049-18.229z" fill="#fff" fill-rule="evenodd" opacity=".2"/>
+ <path d="m340.75 94.25c116 0 215.74 65.385 215.5 195.75s-99.5 195.75-215.5 195.75c-21.75 0-39.424-14.5-32.064-29l32.064-72.5c65.25 7.25 116-43.5 116-94.25s-50.75-101.5-116-94.25l-32.25-72.5c-6.5417-14.5 10.5-29 32.25-29z" fill="#fff" fill-rule="evenodd" opacity=".2"/>
+ <g fill="#c00">
+  <path d="m362 125c83.167 0 165 66.889 165 165s-81.833 165-165 165h-20l20-40c61.833 0 125-49.111 125-125s-63.167-125-125-125l-20-40z"/>
+  <path d="m387 265v50h-325.5v-50z"/>
+  <path d="m86.5 332.5c23.748 0 43-19.252 43-43s-19.252-43-43-43c-23.748 0-43 19.252-43 43s19.252 43 43 43z"/>
+ </g>
+</svg>

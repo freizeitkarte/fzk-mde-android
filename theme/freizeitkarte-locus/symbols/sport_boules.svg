@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="580" width="580" version="1.0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <title>boules</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>boules</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <!-- <path opacity=".8" d="m362.5 29a130.5 130.5 0 0 0 -129.62 116h-29.88a58 58 0 0 0 -58 -58 58 58 0 0 0 -58 58 58 58 0 0 0 58 58v0.97a130.5 130.5 0 0 0 -116 129.53 130.5 130.5 0 0 0 130.5 130.5 130.5 130.5 0 0 0 122.87 -87h8.51a130.5 130.5 0 0 0 -0.88 14.5 130.5 130.5 0 0 0 130.5 130.5 130.5 130.5 0 0 0 130.5 -130.5 130.5 130.5 0 0 0 -109.06 -128.58 130.5 130.5 0 0 0 51.06 -103.42 130.5 130.5 0 0 0 -130.5 -130.5z" fill-rule="evenodd" fill="#fff"/> -->
+ <g fill="#008040">
+  <path d="m173.9 144.86a29 29 0 0 1 -29 29 29 29 0 0 1 -29 -29 29 29 0 0 1 29 -29 29 29 0 0 1 29 29z"/>
+  <path d="m261 333.5a50.0 50.0 0 0 1 -50.0 50.0 50.0 50.0 0 0 1 -50.0 -50.0 50.0 50.0 0 0 1 50.0 -50.0 50.0 50.0 0 0 1 50.0 50.0z"/>
+  <path d="m464 159.5a50.0 50.0 0 0 1 -50.0 50.0 50.0 50.0 0 0 1 -50.0 -50.0 50.0 50.0 0 0 1 50.0 -50.0 50.0 50.0 0 0 1 50.0 50.0z"/>
+  <path d="m522 391.5a50.0 50.0 0 0 1 -50.0 50.0 50.0 50.0 0 0 1 -50.0 -50.0 50.0 50.0 0 0 1 50.0 -50.0 50.0 50.0 0 0 1 50.0 50.0z"/>
+ </g>
+</svg>

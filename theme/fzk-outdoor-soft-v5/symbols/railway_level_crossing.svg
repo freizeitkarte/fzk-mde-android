@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="580" width="580" version="1.0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <title>level_crossing</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>level_crossing</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path opacity=".2" d="m449.5 43.5-159.5 159.5-159.5-159.5h-87v87l159.5 159.5-159.5 163.26v83.244h87l159.5-159.5 159.5 159.5h87v-87l-159.5-159.5 159.5-159.5v-87z" fill-rule="evenodd" fill="#fff"/>
+ <path d="m58 58v58l174 174-174 174v58h58l174-174 174 174h58v-58l-174-174 174-174v-58h-58l-174 174-174-174h-58z" fill-rule="evenodd" fill="#585858"/>
+</svg>

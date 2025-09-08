@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="580" width="580" version="1.0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <title>social_facility</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>social_facility</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path opacity=".8" d="m290 59c-58 0-102.77 71.67-50.49 123.61-21.93 10.87-36.51 33.72-36.51 58.39v78c-12.646-9.5212-28.431-19.225-29-36.303v-137.7c0-53.999-87-54.999-87 0v190c0 58.795 58 53.19 58 100v87h290v-87c0-45.388 58-40.176 58-101.5v-174c0-55-87-68.999-87-14.5v139.55c0 17.41-18.01 26.23-29 34.45v-78c0-25.35-15.51-46.25-35.83-58.21 50.91-52.81 6.83-123.79-51.17-123.79z" fill-rule="evenodd" fill="#fff"/>
+ <path d="m290.23 88.19c-24.016 0-43.489 18.914-43.5 42.254-0.0208 23.362 19.461 42.31 43.5 42.31s43.521-18.949 43.5-42.31c-0.0114-23.339-19.484-42.254-43.5-42.254zm-159.73 42.31a14.5 14.5 0 0 0 -14.5 14.5v174c0 29-0.0167 29 33.871 58 24.11 29 24.13 29 24.13 58v58h87v-87c0-22.885-11.984-21.384-29-29-50.43-29-87-58-87-87v-145a14.5 14.5 0 0 0 -14.5 -14.5zm319 0a14.5 14.5 0 0 0 -14.5 14.5v145c0 29-36.573 58-87 87-17.016 7.616-29 6.1152-29 29v87h87v-58c0-29 0.0167-29 24.129-58 33.888-29 33.871-29 33.871-58v-174a14.5 14.5 0 0 0 -14.5 -14.5zm-159.5 72.5c-58 0-58 29-58 58v87h116v-87c0-29 0-58-58-58z" fill-rule="evenodd" fill="#c00"/>
+</svg>

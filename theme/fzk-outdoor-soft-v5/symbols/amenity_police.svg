@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="580" width="580" version="1.0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <title>police</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>police</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path opacity=".2" fill="#fff" d="m116 522h348v-159.5c0-43.5-29-101.5-72.5-101.5h-29c14.5-14.5 43.5-29 43.5-87v-64.5c0-22.5-29-51.5-49.5-51.5h-133c-20.5 0-49.5 29-49.5 51.5v64.5c0 58 29 72.5 43.5 87h-29c-43.5 0-72.5 58-72.5 101.5z" fill-rule="evenodd"/>
+ <path d="m232 87c-14.5 0-29 14.5-29 29v29h174v-29c0-14.5-14.5-29-29-29h-116zm-29 87v14.5c0 43.5 43.5 72.5 87 72.5s87-29 87-72.5v-14.5h-174zm-14.5 116c-29 0-43.5 43.5-43.5 87v116h43.5l159.5-203h-159.5zm203 0l-159.5 203h203v-116c0-43.5-14.5-87-43.5-87z" fill="#c00"/>
+</svg>

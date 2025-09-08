@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="580" width="580" version="1.0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <title>castle</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>castle</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path d="m29 116h203v116h87v-67.195l77.8-106.8h47.4l77.8 108.22v65.78h-29v261h-435v-232h-29z" fill-rule="evenodd" fill="#f1eee9"/>
+ <path d="m58 145v87h29v232h145v-87h87v87h145v-261h29v-29l-58-87h-29l-58 87v29h29v87h-29v-29h-29v29h-29v-29h-29v29h-29v-29h-29v29h-29v-58h29v-87h-29v29h-29v-29h-29v29h-29v-29z" fill="#724914"/>
+</svg>

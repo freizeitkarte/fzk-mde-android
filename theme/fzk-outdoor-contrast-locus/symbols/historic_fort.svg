@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="580" width="580" version="1.0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <title>fort</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>fort</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path opacity=".8" d="m395.28 19.754c-27.61 0.308-52.44 19.374-80.14 15.773-13.99-6.764-33.23-10.425-45.69 1.293-7.02 7.959-8.45 21.18-8.45 35.68v130.5c-14.5 0-17.93 5.7974-25 14.5l-12.5 72.5h-12l-12.5-72.5c-10.5-14.5-39.5-14.5-54-14.5s-43.5 0-54 14.5l-62 304.5c0 14.5 14.5 29 29 29h464c14.5 0 29-14.5 29.803-30.407l-62.8-303.09c-10.5-14.5-39.5-14.5-54-14.5s-43.5 0-54 14.5l-12.5 72.5h-12l-12.5-72.5-10.5-14.5v-20.701c26.187-2.6626 51.339-18.926 77.957-14.136 13.431 5.0578 30.971 9.5086 42.879-1.2578 10.49-9.47 9.66-21.91 9.66-36.41v-58c0-14.5-1.2-21.526-5.76-32-15.47-17.727-40.81-20.894-62.96-20.746z" fill="#fff"/>
+ <g fill="#672400">
+  <path d="m58 522h464l-58-290h-58l-14.5 87h-58l-14.5-87h-58l-14.5 87h-58l-14.5-87h-58z"/>
+  <path d="m290 58v87c58 29 87-29 145 0v-87c-58-29-87 29-145 0z" fill-rule="evenodd"/>
+  <path d="m290 116v145h14.5v-145z"/>
+ </g>
+</svg>

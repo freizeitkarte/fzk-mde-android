@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 580 580" width="580" height="580">
+  <path opacity="0.8" d=" M 220 100 L 360 100 L 360 220 L 480 220 L 480 360 L 360 360 L 360 480 L 220 480 L 220 360 L 100 360 L 100 220 L 220 220 L 220 100 Z " fill-rule="evenodd" fill="#f1eee9" />
+  <path d=" M 240 120 L 340 120 L 340 240 L 460 240 L 460 340 L 340 340 L 340 460 L 240 460 L 240 340 L 120 340 L 120 240 L 240 240 L 240 120 Z " fill-rule="evenodd" fill="#ca000f" />
+</svg>

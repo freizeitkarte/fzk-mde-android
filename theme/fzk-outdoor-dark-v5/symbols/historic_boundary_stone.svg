@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="580" width="580" version="1.0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <title>boundary_stone</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>boundary_stone</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g fill-rule="evenodd">
+  <path opacity=".8" d="m145 435h290v-290h-290z" fill="#fff"/>
+  <path d="m174 174v232h232v-232z" fill="#404040"/>
+  <path d="m203 377h174v-174h-174z" fill="#fff"/>
+  <circle cx="290" cy="290" r="29" fill="#404040"/>
+ </g>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="580" width="580" version="1.0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <title>basketball</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>basketball</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <!-- <path opacity=".8" d="m105.77 108.73c-0.41549 14.5 3.4953 50.774 33.976 50.774l26.47 188.5h181.78v145c0 33.817 14.5 53.093 51.159 52.75 36.66-0.34 50.34-18.45 50.34-52.75v-339.5c29-23 29-73.726 0-81 0-29-30.189-37.318-51.208-37.478-21.02-0.159-37.35 8.458-50.29 22.98h-188.5c-35.262 0-53.727 14.5-53.727 50.726z" fill="#fff"/> -->
+ <g fill="#008040">
+  <path d="m377 72.5v435c0 14.5 43.5 14.5 43.5 0v-435c0-14.5-43.5-14.5-43.5 0z"/>
+  <path d="m435 87h-290c-14.5 0-14.5 43.5 0 43.5h290c14.5 0 14.5-43.5 0-43.5z"/>
+ </g>
+ <path d="m174 132.81 159.9 0.62-20.77 185.57h-118.33z" fill-rule="evenodd" fill="#e6e6e6"/>
+ <path d="m173.9 131.89 20.666 188.5" stroke="#008040" stroke-linecap="round" stroke-width="40.0" fill="none"/>
+ <path d="m313.08 320.39 20.329-188.5" stroke="#008040" stroke-linecap="round" stroke-width="40.0" fill="none"/>
+</svg>

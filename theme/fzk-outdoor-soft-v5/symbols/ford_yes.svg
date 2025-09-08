@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580" height="580" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <title>ford</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>ford</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path d="m180.06 188.85-122.06 86.646c-9.4707 6.7231-9.3507 22.241 0 29l120.68 87.237c11.013 7.9605 39.327 0.8236 38.815-10.737v-33h145v33c0 10.992 25.185 20.325 39.571 9.9541l119.93-86.454c9.7382-7.0201 9.5606-22.187 0-29l-120.54-85.906c-15.767-11.236-39.482-0.95903-38.957 9.4058v33h-145v-33c0.53149-9.7863-24.254-19.509-37.443-10.146z" fill="#fff" opacity=".2"/>
+ <path d="m29 435c-9.87 8.4469-29 15.086-29 29v29c0 14.5 14.5 29 29 29 29 0 58-29 87-29s43.5 29 87 29 58-29 87-29 43.5 29 87 29 58-29 87-29 58 29 87 29c19.442 0 29-14.5 29-29v-29c-3.4984-14.5-15.549-20.932-29-29-16.303-7.8478-44.349-29-87-29s-58 29-86.864 28.18c-28.864-0.81979-46.858-28.18-87.136-28.18s-58 29-87 29-43.819-29-87-29c-43.181 0-72.268 19.324-87 29z" fill="#fff" opacity=".2"/>
+ <path d="m188.5 261h203v-43.5l101.5 72.5-101.5 72.5v-43.5h-203v43.5l-101.5-72.5 101.5-72.5z" fill="#0069b6"/>
+ <path d="m29 478.5c29 0 58-29 87-29s58 29 87 29 58-29 87-29 58 29 87 29 58-29 87-29 58 29 87 29" fill="none" stroke="#0069b6" stroke-width="33"/>
+</svg>

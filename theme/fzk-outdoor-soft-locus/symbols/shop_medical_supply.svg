@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="580" width="580" version="1.0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <title>medical_supply</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>medical_supply</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path opacity=".2" d="m249.94 14.5c-58.69 0-112.19 43.5-112.19 116v14.5c0 69.353 101.5 69.038 101.5 0v-14.5c0.29966-19.393 21.75-19.063 21.75 0v348c0 58 101.5 58 101.5 0v-348c0-72.5-53.88-116-112.56-116z" fill-rule="evenodd" fill="#fff"/>
+ <path stroke-linejoin="round" d="m188.5 145v-14.5c0-87 123.25-87 123.25 0v340.75" stroke="#1e1ef0" stroke-linecap="round" stroke-width="43.5" fill="none"/>
+</svg>

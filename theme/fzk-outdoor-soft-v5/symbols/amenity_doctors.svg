@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580" height="580" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <title>doctors</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>doctors</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path d="m290 116c-73.703 0-131.32 50.246-145 116-75.917 0-87 87-87 174v116h464v-116c0-87-9.4319-174-87-174-16.213-65.323-71.297-116-145-116z" fill="#fff" opacity=".2"/>
+ <path d="m289.99 145c-65.232 0-115.99 58-115.99 116-87 0-86.994 29-87 232h406c0-203 0-232-87-232 0-58-50.774-116-116.01-116zm0.00586 58c33.717 0 58 29 58 58h-116c0-29 24.283-58 58-58zm-29 87h58v58h58v58h-58v58h-58v-58h-58v-58h58z" fill="#da0092"/>
+</svg>

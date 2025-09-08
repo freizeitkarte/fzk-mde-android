@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="580" width="580" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <title>turm</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>turm</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path d="m116 58v188.5h58l-63.979 319h107.48l12-58 60.5-76.5 60.5 76.5 12 58h110.94l-67.44-319h58v-188.5h-101.5v87h-145v-87z" fill-rule="evenodd" fill="#f1eee9"/>
+ <g fill="#724914">
+  <path d="m145 87v130.5l63.368 0.55514-63.37 318.44h43.5l63.661-318.31 75.667-0.0507 63.67 318.36h43.5l-63.77-318.84 63.77-0.16v-130.5h-43.5v87h-203.71l0.71-87z"/>
+  <path d="m237.1 267.69-22.996 17.669 176.69 229.96 22.996-17.669z"/>
+  <path d="m342.79 267.69 23 17.66-176.69 229.96-23-17.66z"/>
+ </g>
+</svg>

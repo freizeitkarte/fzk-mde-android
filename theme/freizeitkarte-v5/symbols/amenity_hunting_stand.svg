@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="580" width="580" version="1.0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <title>hunting_stand</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>hunting_stand</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path d="m143.86 50.945v95.852c9.6664 2.4144 19.333 4.8266 29 7.2402v134.82h-29v89.289h22.375c-9.6667 48.333-19.333 96.667-29 145h104.98c9.6682-48.333 19.333-96.667 29-145h37.734c9.9691 48.333 19.936 96.667 29.906 145h103.92c-9.6667-48.333-19.333-96.667-29-145h22.375v-89.289h-29v-76.244c9.6666 2.4189 19.334 4.8353 29 7.2559v-98.414c-97.45-24.361-194.88-48.717-292.3-73.077v2.5625z" fill="#f1eee9"/>
+ <g fill="#724914">
+  <path d="m174 87v36.25l232 58v-36.25z"/>
+  <path d="m203 159.5v130.5h174v-87z"/>
+  <path d="m174 319v29h29l-29 145h43.5l29-145h87l29.906 145h42.594l-29-145h29v-29z"/>
+ </g>
+</svg>

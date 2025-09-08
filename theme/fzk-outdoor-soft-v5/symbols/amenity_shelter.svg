@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="580" width="580" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <title>shelter</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>shelter</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path opacity=".2" d="m217.5 145c-14.5 0-24.836 0-29 6.5l-72.5 99v39.5l29.003-0.005v58c-14.5 0-29 0-29 43.5s14.5 43.5 29 43.5l116-0.002v-145h58v145h116c14.5 0 29 0 29-43.5s-14.5-43.5-28.997-43.504v-58h29v-39.5l-72.5-99c-3.75-6.5-14.5-6.5-29-6.5z" fill-rule="evenodd" fill="#fff"/>
+ <path d="m232 406v-144.5h116v144.5h72.5c14.5 0 14.5 0 14.5-14.5s0-14.5-14.5-14.5h-14.5v-116h29l-55-81c-3-4.4182-3-6-10-6h-160c-7 0-7 1.5546-10 6l-55 81.5h29v115.5h-14.5c-14.5 0-14.5 0-14.5 14.5s0 14.5 14.5 14.5z" fill-rule="evenodd" fill="#734a08"/>
+</svg>

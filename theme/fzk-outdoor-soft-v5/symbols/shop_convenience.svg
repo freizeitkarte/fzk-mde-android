@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="580" width="580" version="1.0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <title>convenience</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>convenience</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path opacity=".2" d="m391.6 50.303a50.005 50.005 0 0 0 -44.49 24.902l-76.56 127.8h-183.55c-23.874 4.53-36.275 35.53-29 58l56 212.6c12.85 18.21 39.49 21.7 60 19.4h290c28.78 0.6 38.66-32.7 41-53l46-179c8.49-29-7.86-58.63-29-58h-134.88l45.77-76.4a50.005 50.005 0 0 0 -41.29 -76.297z" fill="#fff"/>
+ <path stroke-linejoin="round" d="m509.14 246.58-408.14 0.42l49 203h310l49-203z" stroke="#1e1ef0" stroke-linecap="round" stroke-width="29" fill="#1e1ef0"/>
+ <path d="m254.52 232.3c-6.6669 21.488 1.9509 45.665 22.157 57.77 23.923 14.331 54.946 6.3246 68.946-17.794l23.97-40.08z" fill="#fff"/>
+ <path stroke-linejoin="round" d="m302.73 246.58 87.27-145.68" stroke="#1e1ef0" stroke-linecap="round" stroke-width="50" fill="none"/>
+ <g stroke-linejoin="round" stroke="#fff" stroke-linecap="round" stroke-width="29" fill="none">
+  <path d="m187.5 304.5v87"/>
+  <path d="m274.5 304.5v87"/>
+  <path d="m361.5 304.5v87"/>
+  <path d="m448.5 304.5v87"/>
+ </g>
+</svg>

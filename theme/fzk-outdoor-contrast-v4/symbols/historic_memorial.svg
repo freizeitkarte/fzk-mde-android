@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="580" width="580" version="1.0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <title>memorial</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>memorial</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path opacity=".8" d="m87 493h406v-65.78l-58-58v-224.22c0-50.927-37.49-87-87-87h-116c-50.22 0-87 36.78-87 87v224.22l-58 58z" fill-rule="evenodd" fill="#fff"/>
+ <path fill="#c00" d="m232 87c-29 0-58 29-58 58v232h232v-232c0-29-29-58-58-58h-116zm29 58h58v29h-58v-29zm-58 58h174v29h-174v-29zm29 58h116v29h-116v-29zm-87 145-29 29v29h348v-29l-29-29h-290z"/>
+</svg>

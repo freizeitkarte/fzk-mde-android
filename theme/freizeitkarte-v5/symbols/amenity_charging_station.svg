@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580" height="580" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <title>charging_station</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>charging_station</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path d="m464 87c36.073 0 58 19.981 58 58v406h-290l-0.14062-76.031c-49.503 38.15-144.86 18.031-144.86-68.969l0.12305-95.682c-31.675-20.318-43.445-62.128-43.716-107.32 0.33054-17.015 10.344-29 21.452-29.385l0.24099-28.361c-0.20171-29.254 27.956-58.254 65.478-34.479 37.562-23.775 64.729 5.2246 65.177 34.496l0.0493 28.583c13.069 0.14648 21.862 20.186 21.596 39.771l14.215-6.4902 0.38477-62.135c0-29 29-58 58-58z" fill="#fff" fill-rule="evenodd" opacity=".8"/>
+ <path d="m290 116c-16.683 0-29 13.012-29 29v87c-34.035 0-58 23.965-58 58v116c0 29-23.81 29-29 29s-29 0-29-29v-116c14.5 0 43.5-14.5 43.5-87h-21.75v-58c0-18.475-21.75-19.203-21.75 0v58h-29v-58c0-19.065-21.75-18.603-21.75 0v58h-21.75c0 72.5 29 87 43.5 87v116c0 58 46.883 58 58 58s58 0 58-58v-116c0-29.155 29-29 29-29v261h232v-377c-7e-5 -16.683-11.622-29-29-29h-174zm78.602 58h79.75l-49.844 77.334h59.812l-109.66 154.67h-19.938l39.875-116h-49.844l49.844-116z" fill="#0069b6"/>
+</svg>

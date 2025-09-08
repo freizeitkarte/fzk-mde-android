@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="580" width="580" version="1.0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <title>chess</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>chess</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g>
+  <path opacity=".8" style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" d="m29 29h522v522h-522z" fill="#fff"/>
+  <path style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" d="m58 58h464v464h-464z" fill="#e3b"/>
+  <path opacity=".9" style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" d="m58 58v58h58v-58h-58zm58 58v58h58v-58h-58zm58 0h58v-58h-58v58zm58 0v58h58v-58h-58zm58 0h58v-58h-58v58zm58 0v58h58v-58h-58zm58 0h58v-58h-58v58zm58 0v58h58v-58h-58zm0 58h-58v58h58v-58zm0 58v58h58v-58h-58zm0 58h-58v58h58v-58zm0 58v58h58v-58h-58zm0 58h-58v58h58v-58zm0 58v58h58v-58h-58zm-58 0h-58v58h58v-58zm-58 0v-58h-58v58h58zm-58 0h-58v58h58v-58zm-58 0v-58h-58v58h58zm-58 0h-58v58h58v-58zm-58 0v-58h-58v58h58zm0-58h58v-58h-58v58zm0-58v-58h-58v58h58zm0-58h58v-58h-58v58zm0-58v-58h-58v58h58zm58 0h58v-58h-58v58zm58 0v58h58v-58h-58zm58 0h58v-58h-58v58zm58 0v58h58v-58h-58zm0 58h-58v58h58v-58zm0 58v58h58v-58h-58zm-58 0h-58v58h58v-58zm-58 0v-58h-58v58h58z" fill="#fff"/>
+ </g>
+ <path d="m198.76 453.42c-3.7698-17.648-1.8563-36.592-1.132-49.071 19.178-17.863 33.307-40.022 29.356-58.898-7.6666-44.766 15.042-72.743 43.751-95.797 20.511-16.303 29.12-27.865 23.541-31.616-4.5534-3.0619-35.919-0.37203-49.417 4.2379-12.391 2.9293-22.358 11.452-34.359 14.93l-27.08-38.39 81.86-75.6c76.745 5.9302 111.62 40.073 121.76 83.084 9.4879 49.915-10.13 83.717-28.035 124.91-8.9802 38.306 15.596 49.663 38.298 72.912 0.93464 12.219 3.7053 32.574-2.3313 49.622-5.9402 4.3117-192.59 4.0002-196.21-0.32742z" stroke="#fff" stroke-width="14" fill="#e3b"/>
+</svg>

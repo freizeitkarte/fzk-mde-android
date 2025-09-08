@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580" height="580" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <title>bed</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>bed</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g>
+  <path d="m58 522h94.25v-50.75h275.5v50.75h94.25v-290c0-58-94.25-58-94.25 0v65.25c-3.3201-9.4468-7.25-14.5-21.75-14.5h-297.25c-29 0-50.75 21.75-50.75 50.75z" fill="#fff" fill-rule="evenodd" opacity=".8"/>
+  <path d="m101.5 311.75c-8.004 0-14.5 6.496-14.5 14.5v50.75h333.5v-50.75c0-7.25-7.25-14.5-14.5-14.5z" fill="#1e1ef0"/>
+  <path id="bed" d="m474.61 217.5c-7.975 0-17.864 6.989-17.864 14.5v174h-369.75v87h36.25v-50.75h333.5v50.75h36.25v-261c0-7.511-10.411-14.5-18.386-14.5z" fill="#1e1ef0"/>
+ </g>
+</svg>
