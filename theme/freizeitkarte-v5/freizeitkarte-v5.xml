@@ -63,6 +63,7 @@
                                Darstellung von water=basin (wie landuse=basin) ergänzt
                                Darstellung von intermittent=yes (bei Wasser) ergänzt
   Version : 25.03 - 07.01.2025 Darstellung für Naturschutzgebiete geändert (naturschutzgebiet.svg, Schraffur statt Buchstabe)
+  Version : 26.01 - 21.09.2025 Darstellung für amenity=lounger ergänzt (wie amenity=bench)
 
   Copyright (C) 2013-2025 FZK-Projekt <freizeitkarte@googlemail.com>
 
@@ -6579,7 +6580,7 @@
       <rule cat="benches_picnic_places" e="node" k="*" v="bench" zoom-min="17" zoom-max="17">
         <symbol display="always" src="file:/symbols/sitzbank.svg" symbol-width="14"/>
       </rule>
-      <rule e="node" k="*" v="bench" zoom-min="18">
+      <rule e="node" k="*" v="bench|lounger" zoom-min="18">
         <symbol display="always" src="file:/symbols/sitzbank.svg" symbol-width="16"/>
       </rule>
       <!-- -->

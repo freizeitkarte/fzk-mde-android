@@ -27,7 +27,8 @@
                                Darstellung Seilbahnen optimiert
   Version : 25.09 - 03.08.2025 aeroway=taxiway: Darstellung geändert für surface=grass
                                Darstellung von Wattrinnen (waterway=tidal_channel), water=basin (wie landuse=basin), intermittent=yes (bei Wasser)
-                               
+  Version : 26.01 - 21.09.2025 Darstellung für amenity=lounger ergänzt (wie amenity=bench)
+                              
   Copyright (C) 2013-2025 FZK-Projekt <freizeitkarte@googlemail.com>
 
   Nutzungsbedingungen:
@@ -6175,10 +6176,10 @@
       <!-- -->
       <!-- (Sitz- oder) Parkbank; öffentliche, im Freien aufgestellte Bank -->
       <!-- -->
-      <rule cat="divpoi" e="node" k="*" v="bench" zoom-min="16" zoom-max="18">
+      <rule cat="divpoi" e="node" k="*" v="bench|lounger" zoom-min="16" zoom-max="18">
         <symbol src="file:/symbols/amenity_bench.svg" symbol-width="14" />
       </rule>
-      <rule e="node" k="*" v="bench" zoom-min="19">
+      <rule e="node" k="*" v="bench|lounger" zoom-min="19">
         <symbol src="file:/symbols/amenity_bench.svg" symbol-width="20" />
       </rule>
       <!-- -->

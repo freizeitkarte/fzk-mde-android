@@ -70,8 +70,9 @@
   <!--                    07.07.2024 Flächengrössen fuer natural=bare_rock berücksichtigt -->
   <!--                    10.09.2024 waterway=tidal_channel berücksichtigt -->
   <!--                    17.09.2024 berücksichtigt: water=basin (identisch mit landuse=basin), intermittent=yes (Wasser-Feature) -->
+  <!-- Version : 26.01  - 21.09.2025 pois: amenity=lounger berücksichtigt -->
   <!-- -->
-  <!-- Copyright (C) 2013-2024 FZK-Projekt <freizeitkarte@googlemail.com> -->
+  <!-- Copyright (C) 2013-2025 FZK-Projekt <freizeitkarte@googlemail.com> -->
   <!-- -->
   <!-- XML-Editor: Komodo Edit (Windows, Mac, Linux) -->
   <!-- XML-Formatter: perl mt.pl xmlformat tag_mapping.xml -->
@@ -307,6 +308,7 @@
     <osm-tag key="amenity" value="ice_cream" zoom-appear="14"/>
     <osm-tag key="amenity" value="kindergarten" zoom-appear="14"/>
     <osm-tag key="amenity" value="library" zoom-appear="14"/>
+    <osm-tag key="amenity" value="lounger" zoom-appear="14"/>
     <osm-tag key="amenity" value="nightclub" zoom-appear="14"/>
     <osm-tag key="amenity" value="parken_eingeschraenkt_1_9" zoom-appear="14"/>
     <osm-tag key="amenity" value="parken_eingeschraenkt_10_9999" zoom-appear="14"/>
